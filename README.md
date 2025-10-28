@@ -19,6 +19,6 @@ The website introduces the visitors to different pizza flavors featured in a min
 
 **Leaderboard:** Players' inputted usernames will be recorded and scores will determine the rankings of said players.
 
-**About**: This page will introduce the creators behind the website as well as fun facts and history of pizza. It will also contain the reason why  The sources will also be linked here.
+**About**: This page will introduce the creators behind the website as well as fun facts and the history of pizza. It will also contain the reason why our website was created. The sources will also be linked here.
 ### Wireframe
 [Website Concept and Vision](https://www.canva.com/design/DAG3FCfLaWM/6FfgqhazStQyZTbIpLlUkg/edit?utm_content=DAG3FCfLaWM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
