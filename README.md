@@ -13,11 +13,11 @@ The website introduces the visitors to different pizza flavors featured in a min
 ### Webpage Breakdown
 **Home:** This shows a banner of our website, as well as a summary of what visitors can expect to see/do in the website. 
 
-**Types of Pizza:** The website will showcase a total of four pizza flavors, namely, Cheese, Pepperoni, Hawaiian, and Vegan pizzas with given informations and mini-game instructions involved with the given pizza flavors.  
+**Types of Pizza:** The website will showcase a total of four pizza flavors, namely, Cheese, Pepperoni, Hawaiian, and Vegan pizzas. We can integrate JavaScript to allow user to click/hover a pizza flavor and show the instruction to create the given pizza flavor in the mini-game.
 
-**Mini-Game:** The mini-game will consist of a playing area which contains a dough (left side) and ingredients necessary to make the four given pizzas (right side). Orders will be generated randomly and a 2-minute timer (tentative) will be set. Javascript will be used in this webpage mainly to control the generation of the orders and the timer, as well as modifying buttons such as the start button. It will also be used for responsive interactions with the player in dragging, clicking, or typing elements concerned with assembling the pizza in the mini-game. Sound effects (using the integrating of JS) may also be used to make the gameplay more immerisve.
+**Mini-Game:** The mini-game will consist of a playing area which contains a dough (left side) and ingredients necessary to make the four given pizzas (right side). Orders will be generated randomly and a 2-minute timer (tentative) will be set. Javascript will be used in this webpage mainly to control the generation of the orders and the timer, as well as modifying buttons such as the start button. It will also be used for responsive interactions with the player in dragging, clicking, or typing elements concerned with assembling the pizza in the mini-game. Sound effects (using the integrating of JS) may also be used to make the gameplay more immerisve. We can also use JavaScript to customize the cursor type to kitchen gloves to make it engaging and playful.
 
-**Leaderboard:** Players' inputted usernames will be recorded and scores will determine the rankings of said players.
+**Leaderboard:** Players' inputted usernames and scores will be recorded automatically. We can use Javascript to sort and update scores of each player in real time. The webpage will then display/highlight the current top-5 players. 
 
 **About**: This page will introduce the creators behind the website as well as fun facts and the history of pizza. It will also contain the reason why our website was created. The sources will also be linked here.
 ### Wireframe
