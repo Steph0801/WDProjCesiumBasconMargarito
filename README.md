@@ -13,9 +13,9 @@ The website introduces the visitors to different pizza flavors featured in a min
 ### Webpage Breakdown
 **Home:** This shows a banner of our website, as well as a summary of what visitors can expect to see/do in the website. 
 
-**Types of Pizza:** The website will showcase a total of four pizza flavors, namely, Cheese, Pepperoni, Hawaiian, and Vegan pizzas.  
+**Types of Pizza:** The website will showcase a total of four pizza flavors, namely, Cheese, Pepperoni, Hawaiian, and Vegan pizzas with given informations and mini-game instructions involved with the given pizza flavors.  
 
-**Mini-Game:** The mini-game will consist of a playing area which contains a dough (left side) and ingredients necessary to make the four given pizzas (right side). Orders will be generated randomly and a 2-minute timer (tentative) will be set. Javascript will be used in this webpage mainly to control the generation of the orders and the timer, as well as modifying buttons such as the start button.
+**Mini-Game:** The mini-game will consist of a playing area which contains a dough (left side) and ingredients necessary to make the four given pizzas (right side). Orders will be generated randomly and a 2-minute timer (tentative) will be set. Javascript will be used in this webpage mainly to control the generation of the orders and the timer, as well as modifying buttons such as the start button. It will also be used for responsive interactions with the player in dragging, clicking, or typing elements concerned with assembling the pizza in the mini-game. Sound effects (using the integrating of JS) may also be used to make the gameplay more immerisve.
 
 **Leaderboard:** Players' inputted usernames will be recorded and scores will determine the rankings of said players.
 
