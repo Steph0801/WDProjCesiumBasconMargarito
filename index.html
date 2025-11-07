@@ -7,8 +7,7 @@
         }
         header {
             background-color: #5b532c;
-            background-size:100%;
-            word-spacing: 10px;
+            justify-content: space-between;
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
@@ -16,12 +15,16 @@
             text-align: right;
             text-decoration: none;
             font-size: 30px;
+            align-content: center;
         }
-        img{
-            float:left;
-            background-color:#5b532c;
+        header img {
+          width: 222px;
+          height: auto;
         }
-        a{
+        nav {
+            display: inline-flexbox;
+        }
+        nav a{
             display:inline-flexbox;
         }
     </style>
@@ -29,12 +32,14 @@
 
 <body>
     <header>
-        <img width="222"height="223"alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb"/>
+        <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb"/>
+        <nav>
         <a href="index.html">Home</a>
         <a>Types of Pizza</a>
         <a>Mini-Game</a>
         <a>Leaderboard</a>
         <a>About</a>
+        </nav>
     </header>
 
     <footer>
