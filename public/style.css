@@ -1,0 +1,35 @@
+        *{
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        body {
+            background-color: #ca7842;
+        }
+        header {
+            background-color: #5b532c;
+            justify-content: space-between;
+            padding: 1vw 2vw;
+            border-radius: 0.5vw;
+            min-height:12vh;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            font-family: Sitka;
+        }
+        header img {
+          width: 10vw;
+          max-width:120px;
+          height: auto;
+          margin-right: 1vw;
+        }
+        nav a{
+            text-decoration: none;
+            margin-right: 2.5vw;
+            margin-left: 2.5vw;
+            font-size: 2.75vw;
+            color: #f6ce5e;
+        }
+        nav a:hover {
+          color: #fb7950;
+        }
