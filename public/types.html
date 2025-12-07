@@ -20,21 +20,31 @@
         font-size: 5vw;
         color:#2b2611;
         }
-        .typeBox{
+        .pep, .cheese, .hawaiian, .vegan{
         background-color: #f6ce5e;
         width: 87%;
         height: 5%;
         margin: 0vw 2vw 1vw 3.25vw;
         padding: 3vw;
         border-radius: 1.5vw;
-        display: inline-flex;
-        align-content: center;
-        justify-content: center;
         font-size: 3vw;
         color:#2b2611;
         }
         .typeBox h2{
         font-family:"Brush Script MT", "Lucida Handwriting";
+        margin-bottom: 1vw;
+        text-align:center;
+        }
+        .pepContent, .chContent, .hwContent, .vgContent{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        }
+        .typeBox p{
+        margin-right:2vw;
+        }
+        .typeBox img{
+        height:9vw;
         }
     </style>
 </head>
@@ -54,12 +64,39 @@
     <section class="titleBox">
         <h1>Pizzas</h1>
     </section>
+
     <section class="typeBox">
-        <div class="pep">
-            <h2>Pepperoni Pizza</h1>
-            <p>(insert description here)</p>
-            <img alt="pepperoni pizza" src="https://github.com/Steph0801/WDProjCesiumBasconMargarito/blob/main/assets/image.png">
-        </div>
+        <section class="pep">
+            <h2>Pepperoni Pizza</h2>
+            <div class="pepContent">
+                <p>(insert description here)</p>
+                <img alt="pepperoni pizza" src="https://amici.ph/cdn/shop/files/CLASSICPEPPERONI_1200x.jpg?v=1747245899">
+            </div>
+        </section>
+
+        <section class="cheese">
+            <h2>Cheese Pizza</h2>
+            <div class="chContent">
+                <p>(insert description here)</p>
+                <img alt="cheese pizza" src="https://media.istockphoto.com/id/1168754685/photo/pizza-margarita-with-cheese-top-view-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=psLRwd-hX9R-S_iYU-sihB4Jx2aUlUr26fkVrxGDfNg=">
+            </div>
+        </section>
+
+        <section class="hawaiian">
+            <h2>Hungarian Pizza</h2>
+            <div class="hwContent">
+                <p>(insert description here)</p>
+                <img alt="hawaiian pizza" src="https://www.onelovelylife.com/wp-content/uploads/2024/08/Hawaiian-Pizza20-3.jpg">
+            </div>
+        </section>
+
+        <section class="vegan">
+            <h2>Vegan Pizza</h2>
+            <div class="vgContent">
+                <p>(insert description here)</p>
+                <img alt="vegan pizza" src="https://t3.ftcdn.net/jpg/03/07/65/18/360_F_307651812_yiydVwvUeeZlTCuUs4E2aqsUMUlwIo86.jpg">
+            </div>
+        </section>
     </section>
 
     <footer>
