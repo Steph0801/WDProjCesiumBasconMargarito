@@ -10,7 +10,7 @@
     color:#2b2611;
 }
 .pep, .cheese, .hawaiian, .vegan{
-    background-color: #f6ce5e;
+    background-color: #fbdc88;
     height: 5%;
     margin: 1vw 2vw 1vw 2vw;
     padding: 3vw;
@@ -37,5 +37,5 @@
     margin-right:2vw;
 }
 .typeBox img{
-    height:9vw;
+    height:20vw;
 }

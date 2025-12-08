@@ -6,34 +6,7 @@
     <title>𝕻𝖎𝖟𝖟𝖆 𝕻𝖆𝖕𝖎</title>
     <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb">
     <link rel="stylesheet" href="styleMain.css">
-    <style>
-        .info {
-        text-align:center;
-        padding-top: 3vw;
-        }
-        .info-box {
-        background-color: #f0f2bd;
-        width: 95%;
-        margin: auto;
-        padding: 3vw;
-        border-radius: 1.5vw;
-        display: inline-block;
-        align-content: center;
-        justify-content: center;
-        color:#2b2611;
-        font-size:5vw;
-        }
-        .game{
-        background-color: #f0f2bd;
-        width: 95%;
-        margin: auto;
-        padding: 3vw;
-        display: inline-block;
-        align-content: center;
-        justify-content: center;
-        color:#2b2611;
-        }
-    </style>
+    <link rel="stylesheet" href="styleGame.css">
 </head>
 
 <body>
@@ -51,30 +24,30 @@
     <section class="info">
         <div class="info-box">
                 <h1>Pizzaria Papia</h1>
+                <div class="gameBtn">
+                    <button id="start">Start</button>
+                    <p id="countDown">00:30</p>
+                </div>
+        </div>
+
+        <div id="gameArea" style="display:none;">
+            <img src="../assets/basePizza.png" id="base">
+            <img src="../assets/cheese.png" class="sprite" id="cheese" draggable="true">
+            <img src="../assets/ham.png" class="sprite" id="ham" draggable="true">
+            <img src="../assets/mushrooms.png" class="sprite" id="mushrooms" draggable="true">
+            <img src="../assets/olives.png" class="sprite" id="olives" draggable="true">
+            <img src="../assets/onions.png" class="sprite" id="onions" draggable="true">
+            <img src="../assets/pepper.png" class="sprite" id="pepper" draggable="true">
+            <img src="../assets/pepperoni.png" class="sprite" id="pepperoni" draggable="true">
+            <img src="../assets/pineapple.png" class="sprite" id="pineapple" draggable="true">
         </div>
     </section>
 
-    <section class="game">
-        <div class="intro">
-            <button id="Start">Start</button>
-            <p class="inaccessible">Tap Start to get started</p>
-        </div>
-
-        <div class="game-grid">
-            <div class="pizza" id="Pizza"></div>
-            <div class="ingredients" id="ingredientsOption">
-                <div id="Pepperoni"></div>
-                <div id="Mozarella"></div>
-                <div id="ham"></div>
-                <div id="pineapple"></div>
-                <div id="mixedVeggies"></div>
-                <div id="veganCheese"></div>
-            </div>
-        </div>
-    </section>
     <footer>
         <p>Copyright © Bascon, Margarito</p>
     </footer>
+
+    <script src="game.js"></script>
 </body>
 
 </html>
