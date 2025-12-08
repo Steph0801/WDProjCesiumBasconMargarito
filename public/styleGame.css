@@ -66,10 +66,7 @@ body{
 .sprite{
     position:absolute;
     width:380px;
-    cursor:grab;
-}
-.sprite:active{
-    cursor:grabbing;
+    cursor:pointer;
 }
 #cheese{
     left:400px;
