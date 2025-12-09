@@ -2,7 +2,7 @@ console.log('Js is running!');
 
 const startBtn = document.getElementById('start');
 const gameArea = document.getElementById('gameArea');
-const sprites = document.querySelectorAll('.sprite');
+
 const startingMinutes=0.5;
 let time = startingMinutes*60;
 let timerInterval;
