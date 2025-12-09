@@ -33,15 +33,15 @@ function updateCountDown() {
     countDown.innerHTML = `00:${seconds}`;
 }
 
-function dragstartHandler(e) {
+function dragstartHandler(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
   }
   
-  function dragoverHandler(e) {
+  function dragoverHandler(ev) {
     ev.preventDefault();
   }
   
-  function dropHandler(e) {
+  function dropHandler(ev) {
     ev.preventDefault();
     const data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
