@@ -46,24 +46,4 @@
         font-family: Comic Sans MS;
         color: #f0f2bd;
         }
-        .fa {
-          padding: 10px;
-          font-size: 20px;
-          width: 20px;
-          text-align: right;
-          text-decoration: none;
-          margin: 2.5px 1px;
-          border-radius: 25%;
-        }
-        
-        .fa:hover {
-            opacity: 0;
-        }
-        .fa-google1 {
-          background: none;
-          color: white;
-        }
-        .fa-google2 {
-          background: none;
-          color: white;
-        }        
+       
