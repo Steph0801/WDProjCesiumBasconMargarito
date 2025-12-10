@@ -25,10 +25,11 @@
     text-align: right;
     margin-top: 1vw;
     margin-bottom: 1vw;
+    width: 100%;
 }
 .nameContent{
     display:flex;
-    align-items:center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 1vw;
 }
@@ -43,4 +44,5 @@
 .name img {
     height:20vw;
     order: -1;
+    margin-right: 2vw;
 }
