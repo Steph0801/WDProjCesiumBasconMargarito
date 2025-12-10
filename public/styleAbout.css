@@ -11,7 +11,7 @@
 }
 .name{
     background-color: #fbdc88;
-    height: 5%;
+    height: auto;
     margin: 1vw 2vw 1vw 2vw;
     padding: 3vw;
     border-radius: 1.5vw;
@@ -20,7 +20,12 @@
     flex: 1 1 250px;
     color:#2b2611;
 }
-
+.name h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
 .nameContent{
     display:flex;
     align-items:center;
