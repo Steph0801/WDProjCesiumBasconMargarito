@@ -79,3 +79,47 @@
         line-height: normal;
     flex-grow: 1;
 }
+.trivia {
+    background-color: #fbdc88;
+    height: auto;
+    margin: 1vw 2vw 1vw 2vw;
+    padding: 3vw;
+    border-radius: 1.5vw;
+    display:block;
+    font-size: 3vw;
+    flex: 1 1 250px;
+    color:#2b2611;
+}
+.trivia h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 100%;
+}
+.triviaContent {
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+
+}
+.triviaContent p{
+    text-align: left;
+        font-family: "Comic Sans MS";
+        line-height: normal;
+        margin-bottom: 1vw;
+}
+.triviaCText {
+    flex-grow: 1;
+    margin-right: 2vw;
+}
+.triviaCImages {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trviaCImages img{
+    display:block;
+    height:auto;
+    margin-bottom: 1vw;
+}
