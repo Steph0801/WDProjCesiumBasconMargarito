@@ -9,7 +9,7 @@
     font-size: 5vw;
     color:#2b2611;
 }
-.mandy, .steph{
+.name{
     background-color: #fbdc88;
     height: 5%;
     margin: 1vw 2vw 1vw 2vw;
@@ -28,7 +28,7 @@
     margin-bottom: 1vw;
     text-align:center;
 }
-.mandyContent{
+.nameContent{
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -40,11 +40,6 @@
 }
 .typeBox img{
     height:20vw;
-}
-.stephContent{
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
 }
 .typeBox p1{
     margin-right:2vw;
