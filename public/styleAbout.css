@@ -39,9 +39,6 @@
 .typeBox img{
     height:20vw;
 }
-.typeBox2{
-    display:block;
-}
 .stephContent{
     display:flex;
     align-items:center;
