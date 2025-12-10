@@ -123,3 +123,14 @@
     height:auto;
     margin-bottom: 1vw;
 }
+.whatBox{
+    background-color: #f0f2bd;
+    height: auto;
+    margin: 2vw 2vw 1vw 2vw;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+    color:#2b2611;
+}
