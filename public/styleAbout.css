@@ -20,25 +20,20 @@
     flex: 1 1 250px;
     color:#2b2611;
 }
-.typeBox{
-    display:block;
-}
-.typeBox h2{
-    font-family:"Brush Script MT", "Lucida Handwriting";
-    margin-bottom: 1vw;
-    text-align:center;
-}
+
 .nameContent{
     display:flex;
     align-items:center;
     justify-content: space-between;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
 }
 .typeBox p{
     margin-left:2vw;
     margin-right: auto;
         font-family: Comic Sans MS;
 }
-.typeBox img{
+.img {
     height:20vw;
 }
 .steph-p{
