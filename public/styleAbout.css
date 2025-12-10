@@ -54,4 +54,5 @@
 }
 .typeBox2 img{
     height:20vw;
+    order: -1;
 }
