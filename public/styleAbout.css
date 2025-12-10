@@ -37,7 +37,7 @@
     margin-left: auto;
     text-align: right;
         font-family: "Comic Sans MS";
-        line-height: 150px;
+    flex-grow: 1;
 }
 .name img {
     height:20vw;
