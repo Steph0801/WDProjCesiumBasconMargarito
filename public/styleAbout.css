@@ -25,12 +25,12 @@
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin-bottom: 12vw;
 }
 .typeBox p{
     margin-left:2vw;
     margin-right: auto;
         font-family: Comic Sans MS;
+        line-height: 150px;
 }
 .img {
     height:20vw;
