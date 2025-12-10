@@ -22,7 +22,7 @@
 }
 .name h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
-    text-align: center;
+    text-align: right;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
@@ -39,15 +39,6 @@
         line-height: 150px;
 }
 .img {
-    height:20vw;
-}
-.steph-p{
-    margin-right:2vw;
-    margin-left:auto;
-    text-align: right;
-        font-family: Comic Sans MS;
-}
-.steph-img{
     height:20vw;
     order: -1;
 }
