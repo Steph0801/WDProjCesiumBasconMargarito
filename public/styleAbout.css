@@ -32,14 +32,14 @@
     justify-content: space-between;
     margin-bottom: 5vw;
 }
-.p{
+.name Content p{
     margin-right:2vw;
     margin-left: auto;
     text-align: right;
         font-family: "Comic Sans MS";
         line-height: 150px;
 }
-.img {
+.name img {
     height:20vw;
     order: -1;
 }
