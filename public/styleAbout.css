@@ -71,3 +71,11 @@
     justify-content: space-between;
     margin-bottom: 1vw;
 }
+.historyContent p{
+    margin-right:2vw;
+    margin-left: auto;
+    text-align: left;
+        font-family: "Comic Sans MS";
+        line-height: normal;
+    flex-grow: 1;
+}
