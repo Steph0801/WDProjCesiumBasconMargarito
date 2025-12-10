@@ -23,13 +23,14 @@
 .name h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
     text-align: center;
-    margin-top: 3vw;
+    margin-top: 1vw;
     margin-bottom: 1vw;
 }
 .nameContent{
     display:flex;
     align-items:center;
     justify-content: space-between;
+    margin-bottom: 5vw;
 }
 .typeBox p{
     margin-left:2vw;
