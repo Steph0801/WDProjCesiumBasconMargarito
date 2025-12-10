@@ -37,6 +37,7 @@
     margin-left: auto;
     text-align: right;
         font-family: "Comic Sans MS";
+        line-height: normal;
     flex-grow: 1;
 }
 .name img {
