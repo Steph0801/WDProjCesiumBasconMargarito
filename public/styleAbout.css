@@ -25,8 +25,8 @@
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin-bottom: 4vw;
-    margin-top: 1vw;
+    margin-bottom: 2vw;
+    margin-top: 4vw;
 }
 .typeBox p{
     margin-left:2vw;
