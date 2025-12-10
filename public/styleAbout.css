@@ -41,13 +41,13 @@
 .typeBox img{
     height:20vw;
 }
-.typeBox p1{
+.steph-p{
     margin-right:2vw;
     margin-left:auto;
     text-align: right;
         font-family: Comic Sans MS;
 }
-.typeBox img1{
+.steph-img{
     height:20vw;
     order: -1;
 }
