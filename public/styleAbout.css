@@ -79,3 +79,7 @@
         line-height: normal;
     flex-grow: 1;
 }
+.history img {
+    height:20vw;
+    margin-left: 2vw;
+}
