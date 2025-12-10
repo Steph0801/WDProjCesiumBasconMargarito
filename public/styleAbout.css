@@ -28,7 +28,7 @@
     margin-bottom: 1vw;
     text-align:center;
 }
-.mandyContent, .stephContent{
+.mandyContent{
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -37,5 +37,25 @@
     margin-left:2vw;
 }
 .typeBox img{
+    height:20vw;
+}
+.typeBox2{
+    display:block;
+}
+.typeBox2 h2{
+    font-family:"Brush Script MT", "Lucida Handwriting";
+    margin-bottom: 1vw;
+    text-align:center;
+}
+.stephContent{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.typeBox2 p{
+    margin-left:2vw;
+    text-align: right;
+}
+.typeBox2 img{
     height:20vw;
 }
