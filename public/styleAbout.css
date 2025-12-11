@@ -125,7 +125,7 @@ display:block;
     align-items: center;
     position:static;
     margin-left: 2vw;
-height:100%;
+height:auto;
 justify-content: space-around;
 }
 .trviaCImages img{
