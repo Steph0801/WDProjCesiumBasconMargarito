@@ -88,8 +88,9 @@
     font-size: 3vw;
     flex: 1 1 250px;
     color:#2b2611;
-    width: auto;
+    width: 50%;
     align-items: stretch;
+    padding: 3vw;
 }
 .trivia h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
