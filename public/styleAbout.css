@@ -105,8 +105,8 @@
 }
 .triviaCText p{
     font-family: "Comic Sans MS";
-    font-size: 2vw;
     line-height: 1.1;
+    text-align: left;
 }
 .triviaCImages {
     display:flex;
@@ -116,7 +116,7 @@ justify-content: space-around;
 }
 .trviaCImages img{
     margin-bottom: 1vw;
-    height: 2vw;
+    height: 0.5vw;
     width: auto;
 }
 .whatBox{
