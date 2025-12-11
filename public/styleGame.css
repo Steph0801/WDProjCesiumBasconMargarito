@@ -29,7 +29,7 @@ body{
     justify-content: center;
     gap:1vw;
 }
-#start{
+#start, #serve{
     text-decoration: none;
     color:#4b352a;
     padding: 10px 16px;
@@ -61,7 +61,7 @@ body{
     position:absolute;
     left:10px;
     top:350px;
-    width:380px;    
+    width:380px;
 }
 .sprite{
     position:absolute;
