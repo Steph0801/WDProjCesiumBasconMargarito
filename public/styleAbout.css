@@ -123,6 +123,9 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+position: absolute;
+right: 2vw;
+margin-top:-3vw;
 }
 .trviaCImages img{
     display:block;
