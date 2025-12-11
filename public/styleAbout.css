@@ -1,6 +1,6 @@
 .titleBox{
     background-color: #f0f2bd;
-    height: 5%;
+    height: auto;
     margin: 2vw 2vw 1vw 2vw;
     padding: 1vw 3vw;
     border-radius: 1.5vw;
@@ -11,7 +11,7 @@
 }
 .name{
     background-color: #fbdc88;
-    height: 5%;
+    height: auto;
     margin: 1vw 2vw 1vw 2vw;
     padding: 3vw;
     border-radius: 1.5vw;
@@ -20,29 +20,113 @@
     flex: 1 1 250px;
     color:#2b2611;
 }
-
+.name h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: right;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 100%;
+}
 .nameContent{
     display:flex;
-    align-items:center;
+    align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 2vw;
-    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
-.typeBox p{
-    margin-left:2vw;
-    margin-right: auto;
-        font-family: Comic Sans MS;
-}
-.img {
-    height:20vw;
-}
-.steph-p{
+.nameContent p{
     margin-right:2vw;
-    margin-left:auto;
+    margin-left: auto;
     text-align: right;
-        font-family: Comic Sans MS;
+        font-family: "Comic Sans MS";
+        line-height: normal;
+    flex-grow: 1;
 }
-.steph-img{
+.name img {
     height:20vw;
     order: -1;
+    margin-right: 2vw;
+}
+.history{
+    background-color: #fbdc88;
+    height: auto;
+    margin: 1vw 2vw 1vw 2vw;
+    padding: 3vw;
+    border-radius: 1.5vw;
+    display:block;
+    font-size: 3vw;
+    flex: 1 1 250px;
+    color:#2b2611;
+}
+.history h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    text-decoration: underline;
+}
+.historyContent{
+  display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.historyContent p{
+    margin-right:2vw;
+    text-align: left;
+        font-family: "Comic Sans MS";
+}
+.history img {
+    height:20vw;
+    order: 1;
+    margin-left: 2vw;
+}
+.trivia {
+    margin:2vw;
+    display:flex;
+   justify-content: space-between;
+    color:#2b2611;
+    gap: 3vw;
+    align-items: stretch;
+}
+.triviaCText h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    font-size: 4vw;
+}
+.triviaCText {
+    flex:1;
+    background-color: #fbdc88;
+    border-radius:1.5vw;
+    padding: 1.5vw;
+    height: auto;
+}
+.triviaCText p{
+    font-family: "Comic Sans MS";
+    font-size: 2vw;
+    line-height: 1.1;
+}
+.triviaCImages {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: space-around;
+}
+.trviaCImages img{
+    margin-bottom: 1vw;
+    height: 5vw;
+    width: auto;
+}
+.whatBox{
+    background-color: #f0f2bd;
+    height: auto;
+    margin: 2vw 2vw 1vw 2vw;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+    color:#2b2611;
 }
