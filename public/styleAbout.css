@@ -79,6 +79,11 @@
         line-height: normal;
     flex-grow: 1;
 }
+.history img {
+    height:20vw;
+    order: 1;
+    margin-left: 2vw;
+}
 .trivia {
     background-color: #fbdc88;
     height: auto;
@@ -95,7 +100,7 @@
     text-align: center;
     margin-top: 1vw;
     margin-bottom: 1vw;
-    width: 100%;
+    width: 50%;
 }
 .triviaContent {
     display:flex;
@@ -120,7 +125,7 @@
 }
 .trviaCImages img{
     display:block;
-    height:auto;
+    height: 20vw;
     margin-bottom: 1vw;
 }
 .whatBox{
