@@ -81,17 +81,13 @@
     margin-left: 2vw;
 }
 .trivia {
-    background-color: #fbdc88;
-    height: auto;
     margin:2vw;
     display:flex;
-    border-radius:1.5vw;
     font-size: 3vw;
    justify-content: space-between;
     color:#2b2611;
     gap: 3vw;
     align-items: stretch;
-    padding: 3vw;
 }
 .triviaCText h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
@@ -103,6 +99,10 @@
 }
 .triviaCText {
     flex:1;
+    background-color: #fbdc88;
+    border-radius:1.5vw;
+    padding: 3vw;
+    height: auto;
 }
 .triviaCText p{
     font-family: "Comic Sans MT";
