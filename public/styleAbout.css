@@ -83,7 +83,6 @@
 .trivia {
     margin:2vw;
     display:flex;
-    font-size: 3vw;
    justify-content: space-between;
     color:#2b2611;
     gap: 3vw;
@@ -95,7 +94,7 @@
     margin-top: 1vw;
     margin-bottom: 1vw;
     width: 100%;
-    font: 4vw;
+    font-size: 4vw;
 }
 .triviaCText {
     flex:1;
@@ -117,7 +116,7 @@ justify-content: space-around;
 }
 .trviaCImages img{
     width: 10vw;
-    margin-bottom: 1vw 0;
+    margin-bottom: 1vw;
 }
 .whatBox{
     background-color: #f0f2bd;
