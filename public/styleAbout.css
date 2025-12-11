@@ -116,8 +116,7 @@ justify-content: space-around;
 }
 .trviaCImages img{
     margin-bottom: 1vw;
-        width: auto;
-    height: 25%;
+    height: 20vw;
 }
 .whatBox{
     background-color: #f0f2bd;
