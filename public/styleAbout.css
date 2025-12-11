@@ -100,13 +100,13 @@
     flex:1;
     background-color: #fbdc88;
     border-radius:1.5vw;
-    padding: 3vw;
+    padding: 2vw;
     height: auto;
 }
 .triviaCText p{
     font-family: "Comic Sans MS";
     font-size: 2vw;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 .triviaCImages {
     display:flex;
@@ -116,6 +116,7 @@ justify-content: space-around;
 }
 .trviaCImages img{
     width: 5vw;
+    height: auto;
     margin-bottom: 1vw;
 }
 .whatBox{
