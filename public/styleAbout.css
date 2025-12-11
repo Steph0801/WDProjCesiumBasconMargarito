@@ -95,6 +95,7 @@
     flex: 1 1 250px;
     color:#2b2611;
     width: auto;
+    align-items: stretch;
 }
 .trivia h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
@@ -124,15 +125,16 @@ display:block;
     display:flex;
     flex-direction: column;
     align-items: center;
-position: relative;
-right: auto;
-margin-top:auto;
-margin-left: 2vw;
+    position:static;
+    margin-left: 2vw;
+height:100%;
+justify-content: space-around;
 }
 .trviaCImages img{
     display:block;
-    height: 10vw;
-    margin-bottom: 1vw;
+    height: auto;
+    width: 10vw;
+    margin-bottom: 0;
 }
 .whatBox{
     background-color: #f0f2bd;
