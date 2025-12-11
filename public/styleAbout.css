@@ -83,56 +83,41 @@
 .trivia {
     background-color: #fbdc88;
     height: auto;
-    margin: 1vw 2vw 1vw 2vw;
+    margin:2vw;
     display:flex;
+    border-radius:1.5vw;
     font-size: 3vw;
-    flex: 1 1 250px;
+   justify-content: space-between;
     color:#2b2611;
-    width: 50%;
+    gap: 3vw;
     align-items: stretch;
     padding: 3vw;
 }
-.trivia h2{
+.triviaCText h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
     text-align: center;
     margin-top: 1vw;
     margin-bottom: 1vw;
     width: 100%;
-}
-.triviaContent {
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-margin-bottom: 1vw;
-display:block;
-}
-.triviaContent p{
-    text-align: left;
-        font-family: "Comic Sans MS";
-        line-height: normal;
-        margin-bottom: 1vw;
-        padding-right: 1vw;
+    font: 4vw;
 }
 .triviaCText {
-    flex-grow: 1;
-    padding: 3vw;
-    border-radius:1.5vw;
-    margin-right:2vw;
+    flex:1;
+}
+.triviaCText p{
+    font-family: "Comic Sans MT";
+    font-size: 2vw;
+    line-height: 1.3;
 }
 .triviaCImages {
     display:flex;
     flex-direction: column;
     align-items: center;
-    position:static;
-    margin-left: 2vw;
-height:auto;
 justify-content: space-around;
 }
 .trviaCImages img{
-    display:block;
-    height: auto;
     width: 10vw;
-    margin-bottom: 0;
+    margin-bottom: 1vw 0;
 }
 .whatBox{
     background-color: #f0f2bd;
