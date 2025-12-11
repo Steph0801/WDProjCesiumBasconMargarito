@@ -94,13 +94,14 @@
     font-size: 3vw;
     flex: 1 1 250px;
     color:#2b2611;
+    width: 50%;
 }
 .trivia h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
     text-align: center;
     margin-top: 1vw;
     margin-bottom: 1vw;
-    width: 50%;
+    width: 100%;
 }
 .triviaContent {
     display:flex;
