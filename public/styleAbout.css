@@ -102,6 +102,7 @@
     border-radius:1.5vw;
     padding: 1.5vw;
     height: auto;
+    width: 50%;
 }
 .triviaCText p{
     font-family: "Comic Sans MS";
