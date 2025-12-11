@@ -84,8 +84,6 @@
     background-color: #fbdc88;
     height: auto;
     margin: 1vw 2vw 1vw 2vw;
-    padding: 3vw;
-    border-radius: 1.5vw;
     display:flex;
     font-size: 3vw;
     flex: 1 1 250px;
@@ -116,6 +114,9 @@ display:block;
 }
 .triviaCText {
     flex-grow: 1;
+    padding: 3vw;
+    border-radius:1.5vw;
+    margin-right:2vw;
 }
 .triviaCImages {
     display:flex;
