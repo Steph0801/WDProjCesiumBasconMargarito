@@ -113,10 +113,10 @@
     flex-direction: column;
     align-items: center;
 justify-content: space-around;
-}
-.trviaCImages img{
     width: auto;
     height: 1vw;
+}
+.trviaCImages img{
     margin-bottom: 1vw;
 }
 .whatBox{
