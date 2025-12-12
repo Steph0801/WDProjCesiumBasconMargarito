@@ -28,12 +28,6 @@ startBtn.addEventListener('click', () => {
     startBtn.style.display = "none"; //hide start button
     gameArea.style.display = "block";
     countDown.style.display = "block";
-    serveBtn.style.display = "block";
-
-    const i = Math.floor(Math.random() * orders.length);
-    order = orders[i]; //shows the first order
-
-    orderShow.textContent = "Order: " + order.name;
 
     if (!timerInterval){
         timerInterval = setInterval(updateCountDown,1000);
