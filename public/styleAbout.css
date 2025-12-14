@@ -114,6 +114,8 @@
 justify-content: space-evenly;
 width: 6vw;
 min-width: 6vw;
+   float: right;
+   margin-left: 15vw;
 }
 .trviaCImages img{
     width: 3vw;
@@ -122,8 +124,6 @@ min-width: 6vw;
    max-height: 3vw;
    object-fit: contain;
    display: block;
-   float: right;
-   margin-left: 15vw;
 }
 .whatBox{
     background-color: #f0f2bd;
