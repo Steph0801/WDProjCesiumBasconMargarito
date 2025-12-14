@@ -86,16 +86,13 @@
     gap: 2vw;
     align-items: stretch;
     max-width: 80%;
-    margin: 1vw 2vw 1vw 2vw;
+    margin: 1vw auto 1vw 2vw;
 }
 .triviaCText h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
     text-align: center;
     margin: 0 0 1vw 0;
     font-size: 5vw;
-    margin: 1vw 2vw 1vw 2vw;
-    padding: 3vw;
-    border-radius: 1.5vw;
 }
 .triviaCText {
     flex:1;
