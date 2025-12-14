@@ -87,7 +87,7 @@
     align-items: stretch;
     max-width: 75%;
     padding: 3vw;
-    border-radius: 1.5vw;
+    border-radius: 5vw / 2vw;
 }
 .triviaCText h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
@@ -114,7 +114,6 @@
 justify-content: space-evenly;
 width: 6vw;
 min-width: 6vw;
-   float: right;
    margin-left: 15vw;
 }
 .trviaCImages img{
