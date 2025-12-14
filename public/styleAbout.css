@@ -110,12 +110,14 @@
     flex-direction: column;
     align-items: center;
 justify-content: space-evenly;
-width: 8vw;
-min-width: 8vw;
+width: 6vw;
+min-width: 6vw;
 }
 .trviaCImages img{
-   max-width: 5vw;
-   max-height: 5vw;
+    width: 3vw;
+    height: 3vw;
+   max-width: 3vw;
+   max-height: 3vw;
    object-fit: contain;
    display: block;
 }
