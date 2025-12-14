@@ -113,8 +113,8 @@
     flex-direction: column;
     align-items: center;
 justify-content: space-evenly;
-width: 6vw;
-min-width: 6vw;
+width: 12vw;
+min-width: 12vw;
    margin-left: auto;
 }
 .trviaCImages img{
@@ -125,7 +125,7 @@ min-width: 6vw;
    object-fit: contain;
    display: block; 
     order: 1;
-    margin-right: -50vw;
+    margin: 0;
 }
 .whatBox{
     background-color: #f0f2bd;
