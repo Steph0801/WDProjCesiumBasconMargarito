@@ -85,7 +85,10 @@
     color:#2b2611;
     gap: 2vw;
     align-items: stretch;
-    max-width: 85%;
+    max-width: 75%;
+margin: 1vw 2vw 1vw 2vw;
+    padding: 3vw;
+    border-radius: 1.5vw;
 }
 .triviaCText h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
