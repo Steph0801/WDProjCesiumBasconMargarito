@@ -60,7 +60,7 @@
     align-items: center;
     margin-bottom: 1vw;
     margin-bottom: 1vw;
-    border-bottom: 2vw solid #2b2611;
+    border-bottom: 2px solid #2b2611;
 }
 .history h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
@@ -71,7 +71,7 @@
     font-size: 5vw;
 }
 .dropdown-arrow {
-    font size: 1.5em;
+    font-size: 1.5em;
     transition: transform 0.3s ease;
     padding-left: 1vw;
 }
@@ -81,7 +81,7 @@
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
-    transform: max-heigt 0.4s ease-in-out;
+    transition: max-heigt 0.4s ease-in-out;
 }
 .history-toggle-input:checked ~ .collapsible-content {
     max-height: 500px;
