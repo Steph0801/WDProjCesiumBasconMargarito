@@ -123,6 +123,7 @@ min-width: 6vw;
    max-height: 3vw;
    object-fit: contain;
    display: block;
+   order: 1;
 }
 .whatBox{
     background-color: #f0f2bd;
