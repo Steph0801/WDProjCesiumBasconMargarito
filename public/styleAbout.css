@@ -100,7 +100,7 @@
     font-size: 3vw;
     border-radius: 1.5vw;
     padding: 3vw;
-    flex: 1 1 250px;
+    flex: 0.7 1 250px;
 }
 .triviaCText p{
     font-family: "Comic Sans MS";
