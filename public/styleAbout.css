@@ -122,6 +122,8 @@ min-width: 6vw;
    max-height: 3vw;
    object-fit: contain;
    display: block;
+   float: right;
+   margin-left: 15vw;
 }
 .whatBox{
     background-color: #f0f2bd;
