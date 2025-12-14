@@ -84,7 +84,7 @@
     display:flex;
     color:#2b2611;
     gap: 2vw;
-    align-items: stretch;
+    align-items: flex-start;
     max-width: 90%;
 }
 .triviaCText h2{
@@ -107,20 +107,21 @@
 }
 .triviaCImages {
     display:flex;
-    flex:0 0 5vw;
+    flex:0 0 4vw;
     flex-direction: column;
     align-items: center;
-justify-content: space-evenly;
-width: 5vw;
-min-width: 5vw;
+justify-content: center;
+width: 4vw;
+min-width: 4vw;
 }
 .trviaCImages img{
-   width: 2.5vw;
-   height: 2.5vw;
-   max-width: 2.5vw;
-   max-height: 2.5vw;
+   width: 2vw;
+   height: 2vw;
+   max-width: 2vw;
+   max-height: 2vw;
    object-fit: contain;
    display: block;
+   flex-shrink: 0;
 }
 .whatBox{
     background-color: #f0f2bd;
