@@ -61,12 +61,13 @@ body{
     position:absolute;
     left:10px;
     top:350px;
-    width:380px;
+    width:13.25vw;
 }
 .sprite{
     position:absolute;
-    width:380px;
+    width:13.25vw;
     cursor:grab;
+    margin-right:2vw;
 }
 #cheese{
     left:400px;
