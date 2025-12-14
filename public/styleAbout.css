@@ -48,32 +48,59 @@
 }
 .history{
     background-color: #fbdc88;
-    height: auto;
     margin: 1vw 2vw 1vw 2vw;
     padding: 3vw;
     border-radius: 1.5vw;
-    display:block;
-    font-size: 3vw;
-    flex: 1 1 250px;
     color:#2b2611;
+    overflow: hidden;
+}
+.history-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+    margin-bottom: 1vw;
+    border-bottom: 2vw solid #2b2611;
 }
 .history h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
     text-align: center;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin: 1vw 0;
     width: 100%;
     text-decoration: underline;
+    font-size: 5vw;
+}
+.dropdown-arrow {
+    font size: 1.5em;
+    transition: transform 0.3s ease;
+    padding-left: 1vw;
+}
+.history-toggle-input {
+    display: none;
+}
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transform: max-heigt 0.4s ease-in-out;
+}
+.history-toggle-input:checked ~ .collapsible-content {
+    max-height: 500px;
+    padding-top: 2vw;
+}
+.history-toggle-input:checked ~ .history-main .dropdown-arrow {
+    transform: rotate(180deg);
 }
 .historyContent{
   display:flex;
     align-items:center;
     justify-content: space-between;
+    font-size: 3vw;
 }
 .historyContent p{
     margin-right:2vw;
     text-align: left;
         font-family: "Comic Sans MS";
+        flex-grow: 1;
 }
 .history img {
     height:20vw;
