@@ -121,10 +121,10 @@ flex-grow: 0;
    right: -10vw;
 }
 .trviaCImages img{
-    width: 3vw;
-    height: 3vw;
-   max-width: 3vw;
-   max-height: 3vw;
+    width: 5vw;
+    height: 5vw;
+   max-width: 5vw;
+   max-height: 5vw;
    object-fit: contain;
    display: block; 
     order: 1;
