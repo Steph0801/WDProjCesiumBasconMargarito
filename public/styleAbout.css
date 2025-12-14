@@ -96,13 +96,13 @@
     text-align: center;
     margin: 0 0 1vw 0;
     font-size: 5vw;
-    border-radius: 1.5vw;
 }
 .triviaCText {
     flex:1;
     background-color: #fbdc88;
     padding: 2vw;
     font-size: 3vw;
+    border-radius: 1.5vw;
 }
 .triviaCText p{
     font-family: "Comic Sans MS";
