@@ -113,8 +113,8 @@
     flex-direction: column;
     align-items: center;
 justify-content: space-evenly;
-width: 12vw;
-min-width: 12vw;
+width: 15vw;
+min-width: 15vw;
 flex-grow: 0;
    margin:0 auto;
 }
