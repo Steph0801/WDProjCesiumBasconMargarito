@@ -115,7 +115,7 @@
 justify-content: space-evenly;
 width: 12vw;
 min-width: 12vw;
-   margin-left: 10vw;
+   margin-left: auto;
 }
 .trviaCImages img{
     width: 3vw;
