@@ -117,6 +117,8 @@ width: 15vw;
 min-width: 15vw;
 flex-grow: 0;
    margin:0 auto;
+   position: relative;
+   right: -10vw;
 }
 .trviaCImages img{
     width: 3vw;
