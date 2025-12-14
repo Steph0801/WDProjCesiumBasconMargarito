@@ -86,8 +86,10 @@
     gap: 2vw;
     align-items: stretch;
     max-width: 75%;
+    margin: 1vw 2vw 1vw 2vw;
     padding: 3vw;
-    border-radius: 5vw / 2vw;
+    border-radius: 1.5vw;
+    flex: 1 1 250px;
 }
 .triviaCText h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
@@ -112,8 +114,8 @@
     flex-direction: column;
     align-items: center;
 justify-content: space-evenly;
-width: 6vw;
-min-width: 6vw;
+width: 4vw;
+min-width: 4vw;
    margin-left: 15vw;
 }
 .trviaCImages img{
@@ -122,7 +124,9 @@ min-width: 6vw;
    max-width: 3vw;
    max-height: 3vw;
    object-fit: contain;
-   display: block;
+   display: block; 
+    order: 1;
+    margin-left: 2vw;
 }
 .whatBox{
     background-color: #f0f2bd;
