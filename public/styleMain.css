@@ -66,9 +66,9 @@ footer {
   font-size: 2vw;
   transition: color 0.3s;
 }
-.float-right-ref a:hover{
+.float-right-ref a:hover, .float-right-ref a:visited:hover {
   color: #fb7950;
 }
-.float-right-ref a:visited {
+.float-right-ref a:visited, .float-right-ref a:active  {
   color: #f0f2bd;
 }
