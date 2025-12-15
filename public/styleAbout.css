@@ -27,6 +27,7 @@
     margin-bottom: 2vw;
     border-bottom: 3px solid #ca7842;
     padding-bottom: 0.5vw;
+    width: 100%;
 }
 .name h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
