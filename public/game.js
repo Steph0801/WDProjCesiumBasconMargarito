@@ -90,8 +90,8 @@ document.addEventListener('mousemove', e => {
 document.addEventListener('mouseup', () => {
     if (!current) return;
 
-    current.style.left = "10px"; //snap in place x-value
-    current.style.top = "350px"; //snap in place y-value
+    current.style.left = "2vw"; //snap in place x-value
+    current.style.top = "25vw"; //snap in place y-value
 
     // add to topping if not already added
     if (!topping.includes(current.id)) {
