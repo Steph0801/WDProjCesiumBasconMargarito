@@ -54,7 +54,9 @@ footer {
   width: 100%;
   font-family: Comic Sans MS;
   color: #f0f2bd;
-  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .float-right-ref {
   float: right;
