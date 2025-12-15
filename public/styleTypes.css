@@ -25,17 +25,58 @@
 }
 .typeBox h2{
     font-family:"Brush Script MT", "Lucida Handwriting";
-    margin-bottom: 1vw;
-    text-align:center;
+    margin: 0;
+    text-align:center; 
+    width: 100%;
 }
 .pepContent, .chContent, .hwContent, .vgContent{
     display:flex;
     align-items:center;
     justify-content: space-between;
+    margin-bottom: 2vw;
 }
 .typeBox p{
     margin-right:2vw;
 }
 .typeBox img{
     height:20vw;
+}
+.pizza-bruh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
+    border-bottom: 2px solid #2b2611;
+}
+.dropdown-mama {
+    font-size: 2em;
+    transition: transform 0.3s ease;
+    padding-left: 1vw;
+}
+.pizza-toggle-input {
+    display: none;
+}
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+.pizza-toggle-input:checked ~ .collapsible-content {
+    max-height: 500px;
+    padding-top: 2vw;
+    border-top: 2px dashed #2b2611;
+}
+.pizza-toggle-input:checked ~ .pizza-bruh .dropdown-mama {
+transform: rotate(180deg);
+}
+.dropdownContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdownContent img{
+    height: 15vw;
+    order: -1;
+    margin-right: 2vw;
 }
