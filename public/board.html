@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styleBoard.css">
 </head>
 
+</script>
+
 <body>
     <header>
         <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb"/>
@@ -23,12 +25,47 @@
 
     <section class="info">
         <div class="info-box">
-            <h1>Leaderboard</h1> 
+            <h1>Leaderboard</h1>
+            <div id="leaderboard"></div>
         </div>
     </section>
     <footer>
         <p>Copyright © Bascon, Margarito</p>
     </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+        import { getFirestore, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDX6AYQz5eBQj36Z2Ux2cymyu0jDLvVQYw",
+            authDomain: "pizza-mini-game.firebaseapp.com",
+            projectId: "pizza-mini-game",
+            storageBucket: "pizza-mini-game.firebasestorage.app",
+            messagingSenderId: "1039460616322",
+            appId: "1:1039460616322:web:fdc7f46cc8f0c08c89cc9b"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database = getFirestore(app);
+
+        const leaderboardDiv = document.getElementById("leaderboard");
+
+        const q = query(
+            collection(database, "leaderboard"),
+            orderBy("score", "desc"),
+            limit(10)
+        );
+
+        const snapshot = await getDocs(q);
+
+        let rank=1;
+        snapshot.forEach((doc, index) => {
+            const data = doc.data();
+            leaderboardDiv.innerHTML += `<p>${rank}. ${data.name} — ${data.score}</p>`;
+            rank++;
+        });
+    </script>
 </body>
 
 </html>

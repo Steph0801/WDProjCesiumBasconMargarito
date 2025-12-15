@@ -106,6 +106,22 @@ document.addEventListener('mouseup', () => {
 
 let totalScore=0;
 
+async function saveScore() {
+  const nameInput = document.getElementById("nameId");
+  const playerName = nameInput.value || "Anonymous";
+
+  try {
+    await addDoc(collection(database, "leaderboard"), {
+      name: playerName,
+      score: totalScore,
+      createdAt: Date.now()
+    });
+    console.log("Score saved");
+  } catch (e) {
+    console.error("Error saving score", e);
+  }
+}
+
 //serve button trigger when clicked
 serveBtn.addEventListener('click', () => {
   if (!order) return;
@@ -149,5 +165,6 @@ serveBtn.addEventListener('click', () => {
     serveBtn.disabled = true;
     startBtn.style.display = "block";
     alert("Time's up!");
+    saveScore();
     }
 });

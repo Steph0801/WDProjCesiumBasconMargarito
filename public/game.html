@@ -42,14 +42,15 @@
             <div class = "baseArea">
                 <img src="../assets/basePizza.png" id="base">
             </div>
-            <img src="../assets/cheese.png" class="sprite" id="cheese">
-            <img src="../assets/ham.png" class="sprite" id="ham">
-            <img src="../assets/mushrooms.png" class="sprite" id="mushrooms">
-            <img src="../assets/olives.png" class="sprite" id="olives">
-            <img src="../assets/onions.png" class="sprite" id="onions">
-            <img src="../assets/pepper.png" class="sprite" id="pepper">
-            <img src="../assets/pepperoni.png" class="sprite" id="pepperoni">
-            <img src="../assets/pineapple.png" class="sprite" id="pineapple">
+
+            <img src="../assets/cheese.png" class="sprite" id="cheese" title="cheese">
+            <img src="../assets/ham.png" class="sprite" id="ham" title="ham">
+            <img src="../assets/mushrooms.png" class="sprite" id="mushrooms" title="mushrooms">
+            <img src="../assets/olives.png" class="sprite" id="olives" title="olives">
+            <img src="../assets/onions.png" class="sprite" id="onions" title="onions">
+            <img src="../assets/pepper.png" class="sprite" id="pepper" title="pepper">
+            <img src="../assets/pepperoni.png" class="sprite" id="pepperoni" title="pepperoni">
+            <img src="../assets/pineapple.png" class="sprite" id="pineapple" title="pineapple">
         </div>
     </section>
 
@@ -57,7 +58,29 @@
         <p>Copyright © Bascon, Margarito</p>
     </footer>
 
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDX6AYQz5eBQj36Z2Ux2cymyu0jDLvVQYw",
+            authDomain: "pizza-mini-game.firebaseapp.com",
+            projectId: "pizza-mini-game",
+            storageBucket: "pizza-mini-game.firebasestorage.app",
+            messagingSenderId: "1039460616322",
+            appId: "1:1039460616322:web:fdc7f46cc8f0c08c89cc9b"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database= getFirestore(app);
+
+        window.database = database;
+        window.collection = collection;
+        window.addDoc = addDoc;
+    </script>
+
     <script src="game.js"></script>
 </body>
+
 
 </html>
