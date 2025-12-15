@@ -20,6 +20,14 @@
     flex: 1 1 250px;
     color:#2b2611;
 }
+.name h1 {
+    font-family: Libre Baskerville;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    border-bottom: 3px solid #ca7842;
+    padding-bottom: 0.5vw;
+}
 .name h2{
     font-family: "Brush Script MT", "Lucida Handwriting";
     text-align: left;
