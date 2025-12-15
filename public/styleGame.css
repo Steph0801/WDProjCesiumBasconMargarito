@@ -101,3 +101,24 @@ body{
     left:700px;
     top:650px;
 }
+.enterName {
+    display:flex;
+    justify-content: center;
+    }
+#name {
+    margin-top:1vw;
+    font-family:cursive;
+    font-size: 3vw;
+    color:#4b352a;
+}
+#nameId {
+    margin-top:1vw;
+    text-align:center;
+    color:#4b352a;
+    font-size:3vw;
+    background-color:#f0f2bd;
+    border:none;
+    border-bottom:0.5vw solid #4b352a;
+    font-family:cursive;
+    max-width:30vw;
+}

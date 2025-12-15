@@ -22,14 +22,20 @@
 
     <section class="info">
         <div class="info-box">
-                <h1>Pizzaria Papia</h1>
-                <div class="gameBtn">
-                    <button id="start">Start</button>
-                    <p id="order"></p>
-                    <p id="countDown">00:30</p>
-                    <button id="serve" style="display:none">Serve</button>
-                    <p id="score"></p>
-                </div>
+            <h1>Pizzaria Papia</h1> 
+
+            <div class="enterName">
+                <p id="name">Enter your name: </p>
+                <input id="nameId">
+            </div>
+
+            <div class="gameBtn">
+                <button id="start">Start</button>
+                <p id="order"></p>
+                <p id="countDown">00:30</p>
+                <button id="serve" style="display:none">Serve</button>
+                <p id="score"></p>
+            </div>
         </div>
 
         <div id="gameArea" style="display:none" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
