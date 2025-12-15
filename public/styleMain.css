@@ -41,6 +41,7 @@ nav a.nav-active-page {
   padding: 0.5vw 1.5vw;
   border-radius: 50px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 footer {
