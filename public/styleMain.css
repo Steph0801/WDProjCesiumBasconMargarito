@@ -54,5 +54,18 @@ footer {
   width: 100%;
   font-family: Comic Sans MS;
   color: #f0f2bd;
+  overflow: auto;
 }
-       
+.float-right-ref {
+  float: right;
+}
+.float-right-ref a{
+  text-decoration: none;
+  color: #f0f2bd;
+  font-family: Comic Sans MS;
+  font-size: 2vw;
+  transition: color 0.3s;
+}
+.float-right-ref a:hover{
+  color: #fb7950;
+}
