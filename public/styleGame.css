@@ -70,36 +70,36 @@ body{
     margin-right:2vw;
 }
 #cheese{
-    left:400px;
-    top:40px;
+    left:28.5vw;
+    top:3vw;
 }
 #ham{
-    left:700px;
-    top:40px;
+    left:50vw;
+    top:3vw;
 }
 #mushrooms{
-    left:1000px;
-    top:40px;
+    left:71vw;
+    top:3vw;
 }
 #olives{
-    left:400px;
-    top:350px;
+    left:28.5vw;
+    top: 25vw;
 }
 #onions{
-    left:700px;
-    top:350px;
+    left:50vw;
+    top:25vw;
 }
 #pepper{
-    left:1000px;
-    top:350px;
+    left:71vw;
+    top:25vw;
 }
 #pepperoni{
-    left:400px;
-    top:650px;
+    left:28.5vw;
+    top:46.5vw;
 }
 #pineapple{
-    left:700px;
-    top:650px;
+    left:50vw;
+    top:46.5vw;
 }
 .enterName {
     display:flex;
