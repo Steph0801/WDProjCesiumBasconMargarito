@@ -35,6 +35,14 @@ nav a{
 nav a:hover {
   color: #fb7950;
 }
+nav a.nav-active-page {
+  background-color: #5b532c;
+  color: #f6ce5e;
+  padding: 0.5vw 1.5vw;
+  border-radius: 50px;
+  display: inline-block;
+}
+
 footer {
   background-color: #5b532c;
   padding: 5vw;
