@@ -69,3 +69,7 @@ footer {
 .float-right-ref a:hover{
   color: #fb7950;
 }
+.float-right-ref a:visited {
+  color: #f0f2bd;
+  text-decoration: none;
+}
