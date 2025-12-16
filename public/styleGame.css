@@ -101,8 +101,43 @@ body{
     top:46.5vw;
 }
 #pineapple{
-    left:50vw;
+    left:50.5vw;
     top:46.5vw;
+}
+figcaption{
+    position:absolute;
+}
+#c{
+    left:37.5vw;
+    top:25vw;
+}
+#h{
+    left:61.5vw;
+    top:25vw;
+}
+#m{
+    left:78vw;
+    top:25vw;
+}
+#ol{
+    left:38.25vw;
+    top:45vw;
+}
+#on{
+    left:60.5vw;
+    top:45vw;
+}
+#ppr{
+    left:81vw;
+    top:45vw;
+}
+#pprn{
+    left:36.5vw;
+    top:67vw;
+}
+#ppnl{
+    left:59vw;
+    top:67vw;
 }
 .enterName {
     display:flex;
