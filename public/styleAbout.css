@@ -212,10 +212,10 @@ border-bottom: 2px solid #ca7842
     border-radius: 0 0 1.5vw 1.5vw;
     color: #f0f2bd;
     font-size: 3vw;
-    display: flex;
+    display: block;
 }
 .creditsContent p {
-    color: #f0f2bd
+    color: #f0f2bd;
     font-family: Comic Sans MS;
     line-height: 1.3;
 }
@@ -225,7 +225,7 @@ border-bottom: 2px solid #ca7842
     transition: max-height 0.4s ease-in-out;
     padding: 0 3vw;
 }
-.credits-toggle-input ~ .collapsible-Content {
+.credits-toggle-input:checked ~ .collapsible-Content {
     max-height: 5000px;
     padding: 3vw;
 }
