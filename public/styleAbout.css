@@ -60,7 +60,7 @@
     margin: 1vw 2vw 1vw 2vw;
     padding: 3vw;
     border-radius: 1.5vw;
-    color:#2b2611l;
+    color:#2b2611;
     overflow: hidden;
 }
 .history-main{
@@ -87,13 +87,15 @@
 .history-toggle-input {
     display: none;
 }
+
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-heigt 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
 }
+
 .history-toggle-input:checked ~ .collapsible-content {
-    max-height: 500px;
+    max-height: 750px;
     padding-top: 2vw;
 }
 .history-toggle-input:checked ~ .history-main .dropdown-arrow {
@@ -106,7 +108,7 @@
     font-size: 3vw;
 }
 .historyContent p{
-    margin-right:2vw;
+    margin-right:4vw;
     text-align: left;
         font-family: "Comic Sans MS";
         flex-grow: 1;
