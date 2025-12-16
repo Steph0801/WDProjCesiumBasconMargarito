@@ -106,8 +106,8 @@ body{
 }
 figcaption{
     position:absolute;
-    font-size:2vw;
-    font-family: cursive;;
+    font-size:1.5vw;
+    font-family:'Courier New', Courier, monospace;
 }
 #c{
     left:38.5vw;
