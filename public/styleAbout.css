@@ -93,7 +93,7 @@
     transition: max-heigt 0.4s ease-in-out;
 }
 .history-toggle-input:checked ~ .collapsible-content {
-    max-height: 500px;
+    max-height: auto;
     padding-top: 2vw;
 }
 .history-toggle-input:checked ~ .history-main .dropdown-arrow {
