@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- navigation -->
     <header>
         <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb"/>
             <nav>
@@ -25,11 +26,13 @@
         <div class="info-box">
             <h1>Pizzaria Papia</h1> 
 
+            <!-- to get input for the leaderboard -->
             <div class="enterName">
                 <p id="name">Enter your name: </p>
                 <input id="nameId">
             </div>
 
+            <!-- buttons/displays used in the game -->
             <div class="gameBtn">
                 <button id="start">Start</button>
                 <p id="order"></p>
@@ -40,6 +43,7 @@
             </div>
         </div>
 
+        <!-- toppings and their labels -->
         <div id="gameArea" style="display:none" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
             <div class = "baseArea">
                 <img src="../assets/basePizza.png" id="base">
@@ -95,6 +99,7 @@
         </footer>
     </body> 
 
+    <!-- leaderboard setup (firebase database) -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
         import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";

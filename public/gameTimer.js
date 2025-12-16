@@ -1,3 +1,4 @@
+//test
 const startingMinutes=0.5;
 let time = startingMinutes*60;
 

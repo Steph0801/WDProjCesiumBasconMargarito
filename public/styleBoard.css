@@ -1,10 +1,13 @@
+/* includes border and padding for the whole document */
 *{
     box-sizing:border-box;
 }
+/* ensures no undesired gaps */
 body{
     margin:0;
     padding:0;
 }
+/* header title "Leaderboard" format */
 .info{
     text-align:center;
     padding-top: 3vw;

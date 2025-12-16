@@ -1,3 +1,4 @@
+/* header title "About us" format */
 .titleBox{
     background-color: #f0f2bd;
     height: auto;
@@ -9,6 +10,7 @@
     font-size: 5vw;
     color:#2b2611;
 }
+/* developers container format */
 .name{
     background-color: #fbdc88;
     height: auto;
@@ -20,6 +22,7 @@
     flex: 1 1 250px;
     color:#2b2611;
 }
+/* text format for h1 and h2 under 'name' container */
 .name h1 {
     font-family: Libre Baskerville;
     font-size: 6vw;
@@ -36,6 +39,7 @@
     margin-bottom: 1vw;
     width: 100%;
 }
+/* 'name' container content format */
 .nameContent{
     display:flex;
     align-items: flex-start;
@@ -55,6 +59,7 @@
     order: -1;
     margin-right: 2vw;
 }
+/* 'history' content format*/
 .history{
     background-color: #fbdc88;
     margin: 1vw 2vw 1vw 2vw;
@@ -79,6 +84,7 @@
     text-decoration: underline;
     font-size: 5vw;
 }
+/* collapsible (+history) content format + algorithm */
 .dropdown-arrow {
     font-size: 2em;
     transition: transform 0.3s ease;
@@ -128,9 +134,10 @@
     font-family: Comic Sans MS;
     font-size: 1vw;
     line-height: 1.2;
-padding: 0 0.5vw;
-color: #2b2611
+    padding: 0 0.5vw;
+    color: #2b2611
 }
+/* trivia content format */
 .trivia {
     display:flex;
     color:#2b2611;
@@ -163,13 +170,13 @@ color: #2b2611
     display:flex;
     flex-direction: column;
     align-items: center;
-justify-content: space-evenly;
-width: 15vw;
-min-width: 15vw;
-flex-grow: 0;
-   margin:0 auto;
-   position: relative;
-   right: -10vw;
+    justify-content: space-evenly;
+    width: 15vw;
+    min-width: 15vw;
+    flex-grow: 0;
+    margin:0 auto;
+    position: relative;
+    right: -10vw;
 }
 .trviaCImages img{
     width: 5vw;
@@ -180,8 +187,9 @@ flex-grow: 0;
    display: block; 
     order: 1;
     margin-left: auto;
-margin-right: 1vw;
+    margin-right: 1vw;
 }
+/* credits container, content, collapsible format + algorithm */
 .whatBox{
     background-color: #f0f2bd;
     height: auto;
