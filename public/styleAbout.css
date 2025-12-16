@@ -232,3 +232,15 @@ border-bottom: 2px solid #ca7842
 #credits-toggle:checked ~ .whatBox-mama .dropdown-arrow {
     transform: rotate(180deg);
 }
+.creditsContent a, .creditsContent a:visited, .creditsContent a:active {
+    color: #f0f2bd;
+    text-decoration: none;
+    display: block;
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-family: Comic Sans MS;
+    transition: color 0.3s;
+}
+.creditsContent a:hover, .creditsContent a:visited:hover {
+    color: #fbdc88;
+}
