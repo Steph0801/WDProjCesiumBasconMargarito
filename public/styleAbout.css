@@ -101,7 +101,7 @@
 .history-toggle-input:checked ~ .history-main .dropdown-arrow {
     transform: rotate(180deg);
 }
-.historyContent{
+.historyContent .history-figure{
   display:flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -113,7 +113,7 @@
         font-family: "Comic Sans MS";
         flex: 3 1 75%
 }
-.history img {
+.historyContent .history-figure img {
     max-height: 25vw;
     max-width: 25vw;
     width:auto;
@@ -123,6 +123,13 @@
     flex-basis: auto;
     order: 1;
     margin-left: 2vw;
+}
+.historyContent figcaption {
+    font-family: Comic Sans MS;
+    font-size: 1vw;
+    line-height: 1.2;
+padding: 0 0.5vw;
+color: #2b2611
 }
 .trivia {
     display:flex;
