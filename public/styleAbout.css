@@ -87,13 +87,15 @@
 .history-toggle-input {
     display: none;
 }
+
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
+
 .history-toggle-input:checked ~ .collapsible-content {
-    max-height: fit-content;
+    max-height: 750px;
     padding-top: 2vw;
 }
 .history-toggle-input:checked ~ .history-main .dropdown-arrow {
