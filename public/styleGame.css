@@ -42,7 +42,22 @@ body{
     font-size:2vw;
     font-family: cursive;
 }
-#start:hover, #serve:hover{
+.gameBtn a{
+    text-decoration: none;
+}
+#leaderboard{
+    color:#4b352a;
+    padding: 0.053vw 0.083vw;
+    background-color:#f6ce5e;
+    text-decoration: none;
+    border-radius: 1.07vw;
+    margin-right: 0.078vw;
+    width:15vw;
+    height:6vw;
+    font-size:2vw;
+    font-family: cursive;
+}
+#start:hover, #serve:hover, #leaderboard:hover{
     text-decoration:none;
     color:#f6ce5e;
     background-color:#4b352a;

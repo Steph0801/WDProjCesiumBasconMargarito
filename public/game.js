@@ -15,6 +15,7 @@ const gameArea = document.getElementById('gameArea');
 const orderShow = document.getElementById('order');
 const serveBtn = document.getElementById('serve');
 const scoreShow = document.getElementById('score');
+const lbBtn = document.getElementById('leaderboard');
 
 const startingMinutes=0.5;
 
@@ -29,7 +30,7 @@ startBtn.addEventListener('click', () => {
     gameArea.style.display = "block";
     countDown.style.display = "block";
     serveBtn.style.display = "block";
-
+    
     const i = Math.floor(Math.random() * orders.length);
     order = orders[i]; //shows the first order
 
@@ -54,7 +55,6 @@ function updateCountDown() {
         gameRunning = false; // stop dragging
         serveBtn.disabled = true; //stop serving
         gameArea.style.display = "none"; //stop displaying game interface
-        startBtn.style.display = "block"; //user can play again
         alert("Time's up!");
         return;
     } else if (time>0){
@@ -65,6 +65,7 @@ function updateCountDown() {
 
     countDown.innerHTML = `00:${seconds}`;
 }
+
 const sprites = document.querySelectorAll('.sprite');
 let current = null;
 let offsetX = 0;
@@ -163,7 +164,10 @@ serveBtn.addEventListener('click', () => {
     orderShow.textContent = "";
     gameArea.style.display = "none";
     serveBtn.disabled = true;
-    startBtn.style.display = "block";
+    serveBtn.style.display = "none";
+    lbBtn.style.display = "block";
+    countDown.style.display = "none";
+    
     alert("Time's up!");
     saveScore();
     }

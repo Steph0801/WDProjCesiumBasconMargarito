@@ -13,7 +13,6 @@ header {
   background-color: #5b532c;
   justify-content: space-between;
   padding: 1vw 2vw;
-  border-radius: 0.5vw;
   min-height:12vh;
   display:flex;
   align-items:center;
@@ -29,7 +28,7 @@ nav a{
   text-decoration: none;
   margin-right: 3vw;
   margin-left: 3vw;
-  font-size: 2.75vw;
+  font-size: 2.57vw;
   color: #f6ce5e;
 }
 nav a:hover {
