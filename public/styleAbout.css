@@ -90,7 +90,7 @@
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-heigt 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
 }
 .history-toggle-input:checked ~ .collapsible-content {
     max-height: auto;
