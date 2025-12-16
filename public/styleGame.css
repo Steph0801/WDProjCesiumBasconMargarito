@@ -1,6 +1,3 @@
-*{
-    box-sizing:border-box;
-}
 body{
     margin:0;
     padding:0;
@@ -101,8 +98,45 @@ body{
     top:46.5vw;
 }
 #pineapple{
-    left:50vw;
+    left:50.5vw;
     top:46.5vw;
+}
+figcaption{
+    position:absolute;
+    font-size:1.5vw;
+    font-family:'Courier New', Courier, monospace;
+}
+#c{
+    left:38.5vw;
+    top:25vw;
+}
+#h{
+    left:61vw;
+    top:25vw;
+}
+#m{
+    left:79vw;
+    top:25vw;
+}
+#ol{
+    left:38.5vw;
+    top:45vw;
+}
+#on{
+    left:61vw;
+    top:45vw;
+}
+#ppr{
+    left:81.5vw;
+    top:45vw;
+}
+#pprn{
+    left:37.5vw;
+    top:67vw;
+}
+#ppnl{
+    left:60vw;
+    top:67vw;
 }
 .enterName {
     display:flex;
