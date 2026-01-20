@@ -1,10 +1,10 @@
 console.log('Js is running!');
 
 const orders = [
-  {name: "Cheese Pizza", toppings: ["cheese"]},
-  {name: "Pepperoni Pizza", toppings: ["cheese","pepperoni"]},
-  {name: "Hawaiian Pizza", toppings: ["cheese","ham","pineapple"]},
-  {name: "Vegan Pizza", toppings: ["cheese","mushrooms","olives","onions","pepper"]},
+  {name: "Cheese", toppings: ["cheese"]},
+  {name: "Pepperoni", toppings: ["cheese","pepperoni"]},
+  {name: "Hawaiian", toppings: ["cheese","ham","pineapple"]},
+  {name: "Vegan", toppings: ["cheese","mushrooms","olives","onions","pepper"]},
 ]
 
 let order = null;
@@ -130,9 +130,17 @@ serveBtn.addEventListener('click', () => {
   let score = 0;
   const added = new Set(topping);
 
-  order.toppings.forEach(t => {
-  if (added.has(t)) score++;
-  });
+  if (order.name==="Cheese"){
+    order.toppings.forEach(t => {
+      if (added.has(t)) score++;
+    });    
+  } else {
+    order.toppings.slice(1).forEach(t => {
+      if (added.has("cheese")){
+        if (added.has(t)) score++;
+      }
+    });
+  }
 
   added.forEach(t => {
     if (!order.toppings.includes(t)) score--;
