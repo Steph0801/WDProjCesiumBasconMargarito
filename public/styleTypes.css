@@ -82,3 +82,8 @@ transform: rotate(180deg);
     order: -1;
     margin-right: 2vw;
 }
+#vgIngrdnt{
+    width:100%;
+    max-width:1500px;
+    height:auto;
+}
