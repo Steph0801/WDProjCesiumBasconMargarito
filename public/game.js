@@ -1,5 +1,6 @@
-console.log('Js is running!');
+console.log('Js is running!'); //debugging
 
+//set toppings to corresponding orders
 const orders = [
   {name: "Cheese", toppings: ["cheese"]},
   {name: "Pepperoni", toppings: ["cheese","pepperoni"]},
@@ -7,30 +8,35 @@ const orders = [
   {name: "Vegan", toppings: ["cheese","mushrooms","olives","onions","pepper"]},
 ]
 
+//set order/s and toppings to 'nothing' so it won't bug
 let order = null;
 let topping = [];
 
+//get necessary buttons or displays
 const startBtn = document.getElementById('start');
 const gameArea = document.getElementById('gameArea');
 const orderShow = document.getElementById('order');
 const serveBtn = document.getElementById('serve');
 const scoreShow = document.getElementById('score');
+const lbBtn = document.getElementById('leaderboard');
 
-const startingMinutes=0.5;
+//for the timer
+const startingMinutes=0.5; //1 minute divided by 2
 
-let time = startingMinutes*60;
+let time = startingMinutes*60; //converts into seconds
 let timerInterval;
 
 const countDown = document.getElementById('countDown');
 
 //start (load game area and sprites)
 startBtn.addEventListener('click', () => {
-    startBtn.style.display = "none"; //hide start button
+    //hide or show after starting
+    startBtn.style.display = "none";
     gameArea.style.display = "block";
     countDown.style.display = "block";
     serveBtn.style.display = "block";
-
-    const i = Math.floor(Math.random() * orders.length);
+    
+    const i = Math.floor(Math.random() * orders.length); //randomizes the orders
     order = orders[i]; //shows the first order
 
     orderShow.textContent = "Order: " + order.name;
@@ -51,10 +57,9 @@ function updateCountDown() {
 
         countDown.innerHTML = "00:00";
 
-        gameRunning = false; // stop dragging
+        //when timer runs out
         serveBtn.disabled = true; //stop serving
         gameArea.style.display = "none"; //stop displaying game interface
-        startBtn.style.display = "block"; //user can play again
         alert("Time's up!");
         return;
     } else if (time>0){
@@ -65,13 +70,19 @@ function updateCountDown() {
 
     countDown.innerHTML = `00:${seconds}`;
 }
+
 const sprites = document.querySelectorAll('.sprite');
 let current = null;
+
+//cursor
 let offsetX = 0;
 let offsetY = 0;
 
 sprites.forEach(sprite => {
     sprite.addEventListener('mousedown', e => {
+
+        //set current dragged sprite
+        //update cursor
         current = sprite;
         offsetX = e.offsetX;
         offsetY = e.offsetY;
@@ -82,6 +93,7 @@ sprites.forEach(sprite => {
 
 document.addEventListener('mousemove', e => {
     if (!current) return;
+
     //sprite don't jump TT
     current.style.left = (e.pageX - gameArea.offsetLeft - offsetX) + "px";
     current.style.top = (e.pageY - gameArea.offsetTop - offsetY) + "px";
@@ -90,10 +102,11 @@ document.addEventListener('mousemove', e => {
 document.addEventListener('mouseup', () => {
     if (!current) return;
 
-    current.style.left = "2vw"; //snap in place x-value
-    current.style.top = "25vw"; //snap in place y-value
+    //snap topping on the pizza base
+    current.style.left = "2vw";
+    current.style.top = "25vw";
 
-    // add to topping if not already added
+    //add to topping if not yet added => needed to cross-check w/array 'orders'
     if (!topping.includes(current.id)) {
         topping.push(current.id);
         console.log("Added topping:", current.id);
@@ -108,7 +121,7 @@ let totalScore=0;
 
 async function saveScore() {
   const nameInput = document.getElementById("nameId");
-  const playerName = nameInput.value || "Anonymous";
+  const playerName = nameInput.value || "Anonymous"; //stores either inputted value or 'Anonymous' if none
 
   try {
     await addDoc(collection(database, "leaderboard"), {
@@ -116,9 +129,9 @@ async function saveScore() {
       score: totalScore,
       createdAt: Date.now()
     });
-    console.log("Score saved");
+    console.log("Score saved"); //debugging
   } catch (e) {
-    console.error("Error saving score", e);
+    console.error("Error saving score", e); //debugging
   }
 }
 
@@ -128,7 +141,7 @@ serveBtn.addEventListener('click', () => {
 
   //scoring
   let score = 0;
-  const added = new Set(topping);
+  const added = new Set(topping); //avoid duplicates
 
   if (order.name==="Cheese"){
     order.toppings.forEach(t => {
@@ -142,6 +155,7 @@ serveBtn.addEventListener('click', () => {
     });
   }
 
+  //subtracts point/s if wrong topping
   added.forEach(t => {
     if (!order.toppings.includes(t)) score--;
   });
@@ -155,6 +169,7 @@ serveBtn.addEventListener('click', () => {
   order = null;
   orderShow.textContent = "";
 
+  //reset topping position
   sprites.forEach(sprite => {
     sprite.style.left = "";
     sprite.style.top = "";
@@ -167,11 +182,16 @@ serveBtn.addEventListener('click', () => {
     orderShow.textContent = "Order: " + order.name;
   } else {
     //end game time's up
+    
+    //hide or show after time's up
     order = null;
     orderShow.textContent = "";
     gameArea.style.display = "none";
     serveBtn.disabled = true;
-    startBtn.style.display = "block";
+    serveBtn.style.display = "none";
+    lbBtn.style.display = "block";
+    countDown.style.display = "none";
+    
     alert("Time's up!");
     saveScore();
     }

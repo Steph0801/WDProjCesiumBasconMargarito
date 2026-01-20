@@ -1,3 +1,4 @@
+/* header title "Pizza Papi" + logo + slogan format */
 .info {
     text-align:center;
     padding-top: 3vw;
@@ -35,8 +36,9 @@
     color: #2b2611;
     margin-top: -1vw;
 }
+/* description format */
 .desc {
-    margin-top:4vw;
+    margin-top:6vw;
     color:#ffecb5;
     font-family:Tahoma;
     font-size:2vw;

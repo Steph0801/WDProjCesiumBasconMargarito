@@ -26,17 +26,20 @@
     <section class="info">
         <div class="info-box">
             <h1>Leaderboard</h1>
-            <div id="leaderboard"></div>
+            <div id="leaderboard"></div> <!-- to show leaderboard -->
         </div>
     </section>
+
      <footer>
-       <p>Copyright © Bascon, Margarito</p>
+        <p>Copyright © Bascon, Margarito</p>
         <div class="float-right-ref">
             <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
         </div>
-        </footer>
+    </footer>
+
     </body> 
 
+    <!-- leaderboard setup (firebase database) -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
         import { getFirestore, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
@@ -58,7 +61,7 @@
         const q = query(
             collection(database, "leaderboard"),
             orderBy("score", "desc"),
-            limit(10)
+            limit(10) //limit to top 10 scoreres
         );
 
         const snapshot = await getDocs(q);

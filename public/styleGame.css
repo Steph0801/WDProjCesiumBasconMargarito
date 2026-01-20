@@ -1,7 +1,9 @@
+/* ensures no undesired gaps */
 body{
     margin:0;
     padding:0;
 }
+/* header title "Pizzaria Papia" format */
 .info{
     text-align:center;
     padding-top: 3vw;
@@ -20,6 +22,7 @@ body{
     color:#2b2611;
     font-size:5vw;
 }
+/* game buttons/displays format */
 .gameBtn{
     display:flex;
     align-items: center;
@@ -42,7 +45,22 @@ body{
     font-size:2vw;
     font-family: cursive;
 }
-#start:hover, #serve:hover{
+.gameBtn a{
+    text-decoration: none;
+}
+#leaderboard{
+    color:#4b352a;
+    padding: 0.053vw 0.083vw;
+    background-color:#f6ce5e;
+    text-decoration: none;
+    border-radius: 1.07vw;
+    margin-right: 0.078vw;
+    width:15vw;
+    height:6vw;
+    font-size:2vw;
+    font-family: cursive;
+}
+#start:hover, #serve:hover, #leaderboard:hover{
     text-decoration:none;
     color:#f6ce5e;
     background-color:#4b352a;
@@ -57,6 +75,25 @@ body{
     background-color:#f0f2bd;
     margin:1vw auto;
 }
+/* formats user input */
+#name{
+    margin-top:1vw;
+    font-family:cursive;
+    font-size: 3vw;
+    color:#4b352a;
+}
+#nameId{
+    margin-top:1vw;
+    text-align:center;
+    color:#4b352a;
+    font-size:3vw;
+    background-color:#f0f2bd;
+    border:none;
+    border-bottom:0.5vw solid #4b352a;
+    font-family:cursive;
+    max-width:30vw;
+}
+/* positions and formats the sprites + label */
 #base{
     position:absolute;
     left:2vw;
@@ -143,20 +180,8 @@ figcaption{
     justify-content: center;
     margin-bottom: 2vw;
 }
-#name {
-    margin-top:1vw;
-    font-family:cursive;
-    font-size: 3vw;
-    color:#4b352a;
-}
-#nameId {
-    margin-top:1vw;
-    text-align:center;
-    color:#4b352a;
-    font-size:3vw;
-    background-color:#f0f2bd;
-    border:none;
-    border-bottom:0.5vw solid #4b352a;
-    font-family:cursive;
-    max-width:30vw;
+.label figcaption{
+    font-family: cursive;
+    font-weight: lighter;
+    font-size:1.5vw;
 }
