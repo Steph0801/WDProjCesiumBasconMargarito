@@ -143,6 +143,7 @@ serveBtn.addEventListener('click', () => {
   let score = 0;
   const added = new Set(topping); //avoid duplicates
 
+  //prevents the user from 'abusing' the cheese ingredient but is still required to gain points
   if (order.name==="Cheese"){
     order.toppings.forEach(t => {
       if (added.has(t)) score++;

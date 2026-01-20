@@ -11,93 +11,96 @@
 
 <body>
     <!-- navigation -->
-    <header>
-        <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb"/>
-            <nav>
+     <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
                 <a href="home.html">Home</a>
                 <a href="types.html">Types of Pizza</a>
                 <a href="game.html" class="nav-active-page">Game</a>
                 <a href="board.html">Leaderboard</a>
                 <a href="about.html">About</a>
-            </nav>
-    </header>
+    </div>
 
-    <section class="info">
-        <div class="info-box">
-            <h1>Pizzaria Papia</h1> 
+    <div id="main">
+        <header>
+                <button class="openbutton" onclick="openNav()">☰</button>
+        </header>
 
-            <!-- to get input for the leaderboard -->
-            <div class="enterName">
-                <p id="name">Enter your name: </p>
-                <input id="nameId">
+        <section class="info">
+            <div class="info-box">
+                <h1>Pizzaria Papia</h1> 
+
+                <!-- to get input for the leaderboard -->
+                <div class="enterName">
+                    <p id="name">Enter your name: </p>
+                    <input id="nameId">
+                </div>
+
+                <!-- buttons/displays used in the game -->
+                <div class="gameBtn">
+                    <button id="start">Start</button>
+                    <p id="order"></p>
+                    <p id="countDown">00:30</p>
+                    <button id="serve" style="display:none">Serve</button>
+                    <p id="score"></p>
+                    <a href="board.html"><button id="leaderboard" style="display:none">Show Leaderboard!</button></a>
+                </div>
             </div>
 
-            <!-- buttons/displays used in the game -->
-            <div class="gameBtn">
-                <button id="start">Start</button>
-                <p id="order"></p>
-                <p id="countDown">00:30</p>
-                <button id="serve" style="display:none">Serve</button>
-                <p id="score"></p>
-                <a href="board.html"><button id="leaderboard" style="display:none">Show Leaderboard!</button></a>
+            <!-- toppings and their labels -->
+            <div id="gameArea" style="display:none" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+                <div class = "baseArea">
+                    <img src="../assets/basePizza.png" id="base">
+                </div>
+
+                <figure>
+                    <img src="../assets/cheese.png" class="sprite" id="cheese" title="cheese">
+                    <figcaption id="c">cheese</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../assets/ham.png" class="sprite" id="ham" title="ham">
+                    <figcaption id="h">ham</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../assets/mushrooms.png" class="sprite" id="mushrooms" title="mushrooms">
+                    <figcaption id="m">mushrooms</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../assets/olives.png" class="sprite" id="olives" title="olives">
+                    <figcaption id="ol">olives</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../assets/onions.png" class="sprite" id="onions" title="onions">
+                    <figcaption id="on">onions</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../assets/pepper.png" class="sprite" id="pepper" title="pepper">
+                    <figcaption id="ppr">pepper</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../assets/pepperoni.png" class="sprite" id="pepperoni" title="pepperoni">
+                    <figcaption id="pprn">pepperoni</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../assets/pineapple.png" class="sprite" id="pineapple" title="pineapple">
+                    <figcaption id="ppnl">pineapple</figcaption>
+                </figure>
             </div>
-        </div>
+        </section>
 
-        <!-- toppings and their labels -->
-        <div id="gameArea" style="display:none" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
-            <div class = "baseArea">
-                <img src="../assets/basePizza.png" id="base">
+        <footer>
+        <p>Copyright © Bascon, Margarito</p>
+            <div class="float-right-ref">
+                <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
             </div>
-
-            <figure>
-                <img src="../assets/cheese.png" class="sprite" id="cheese" title="cheese">
-                <figcaption id="c">cheese</figcaption>
-            </figure>
-
-            <figure>
-                <img src="../assets/ham.png" class="sprite" id="ham" title="ham">
-                <figcaption id="h">ham</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="../assets/mushrooms.png" class="sprite" id="mushrooms" title="mushrooms">
-                <figcaption id="m">mushrooms</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="../assets/olives.png" class="sprite" id="olives" title="olives">
-                <figcaption id="ol">olives</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="../assets/onions.png" class="sprite" id="onions" title="onions">
-                <figcaption id="on">onions</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="../assets/pepper.png" class="sprite" id="pepper" title="pepper">
-                <figcaption id="ppr">pepper</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="../assets/pepperoni.png" class="sprite" id="pepperoni" title="pepperoni">
-                <figcaption id="pprn">pepperoni</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="../assets/pineapple.png" class="sprite" id="pineapple" title="pineapple">
-                <figcaption id="ppnl">pineapple</figcaption>
-            </figure>
-        </div>
-    </section>
-
-     <footer>
-       <p>Copyright © Bascon, Margarito</p>
-        <div class="float-right-ref">
-            <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
-        </div>
         </footer>
-    </body> 
+    </div> 
 
     <!-- leaderboard setup (firebase database) -->
     <script type="module">
@@ -127,6 +130,20 @@
         window.onload = function() {
             alert("Remain anonymous or gain the recognition on the 𝒕𝒐𝒑 10 𝒍𝒆𝒂𝒅𝒆𝒓𝒃𝒐𝒂𝒓𝒅 and type in a name before starting. 𝑫𝒓𝒂𝒈 𝒂𝒏𝒅 𝒅𝒓𝒐𝒑 𝑶𝑹 𝒄𝒍𝒊𝒄𝒌 on the ingredients according to the pizza order shown on the screen. Click on '𝑺𝒆𝒓𝒗𝒆' once done with the order. Ingredients for each pizza can be found in '𝑻𝒚𝒑𝒆𝒔 𝒐𝒇 𝑷𝒊𝒛𝒛𝒂'. You have 30 𝒔𝒆𝒄𝒐𝒏𝒅𝒔 to make as many pizzas as you can. Have 𝒇𝒖𝒏!")
         };
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+            document.getElementById("main").style.marginLeft = "-250px"; 
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
     </script>
 </body>
 
