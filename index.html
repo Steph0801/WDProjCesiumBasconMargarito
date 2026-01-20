@@ -11,17 +11,20 @@
 </head>
 
 <body>
-    <header>
-        <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb"/>
-            <nav>
-                <a href="./public/home.html" class="nav-active-page">Home</a>
-                <a href="./public/types.html">Types of Pizza</a>
-                <a href="./public/game.html">Game</a>
-                <a href="./public/board.html">Leaderboard</a>
-                <a href="./public/about.html">About</a>
-            </nav>
-    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
+        <a href="home.html" class="nav-active-page">Home</a>
+        <a href="types.html">Types of Pizza</a>
+        <a href="game.html">Game</a>
+        <a href="board.html">Leaderboard</a>
+        <a href="about.html">About</a>
+    </div>
 
+    <div id="main">
+        <header>
+          
+            <button class="openbutton" onclick="openNav()">☰</button>
+        </header>
     <section class="info">
         <div class="info-box">
             <div class="buns">
@@ -44,6 +47,18 @@
             <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
         </div>
     </footer>
+    <script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+        document.getElementById("main").style.marginLeft = "-250px"; 
+    }
 
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
 </body>
 </html>
