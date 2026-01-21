@@ -11,42 +11,46 @@
 </head>
 
 <body>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
-        <a href="public\home.html" class="nav-active-page">Home</a>
-        <a href="public\types.html">Types of Pizza</a>
-        <a href="public\game.html">Game</a>
-        <a href="public\board.html">Leaderboard</a>
-        <a href="public\about.html">About</a>
-    </div>
 
-    <div id="main">
-        <header>
-          
-            <button class="openbutton" onclick="openNav()">☰</button>
-        </header>
-    <section class="info">
-        <div class="info-box">
-            <div class="buns">
-                <img src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb" alt="pizza logo">
-                <h1>Pizza Papi</h1>
+    <div class="site">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
+            <a href="public\home.html" class="nav-active-page">Home</a>
+            <a href="public\types.html">Types of Pizza</a>
+            <a href="public\game.html">Game</a>
+            <a href="public\board.html">Leaderboard</a>
+            <a href="public\about.html">About</a>
+        </div>
+
+        <div id="main">
+            <div class="content">
+                <header>
+                
+                    <button class="openbutton" onclick="openNav()">☰</button>
+                </header>
+                <section class="info">
+                    <div class="info-box">
+                        <div class="buns">
+                            <img src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb" alt="pizza logo">
+                            <h1>Pizza Papi</h1>
+                        </div>
+                        <p>your pizza haven</p>
+                    </div>
+
+                    <div class="desc">
+                        <p>Welcome to <b>Pizza Papi</b>, your ultimate interactive online station pivoted on the world's favorite food! This site features a fun, engaging appeal with pizza themed colors and informative content. Head over to the <b>About</b> page to meet the creators and discover facts and origin about pizza.<br>
+                            <br>
+                            Ready to have fun? Challenge yourself on the <b>Game</b> page with the task of assembling different random pizzas and racing against the clock. After you serve up your creations, check the <b>Leaderboard</b> to see if you have what it takes to be the top Pizza Papi. Visit the <b>Types of Pizza</b> page for detailed instructions and background on every flavor you'll be baking!</p>
+                    </div>
+                </section>
             </div>
-            <p>your pizza haven</p>
-        </div>
-
-        <div class="desc">
-            <p>Welcome to <b>Pizza Papi</b>, your ultimate interactive online station pivoted on the world's favorite food! This site features a fun, engaging appeal with pizza themed colors and informative content. Head over to the <b>About</b> page to meet the creators and discover facts and origin about pizza.<br>
-                <br>
-                Ready to have fun? Challenge yourself on the <b>Game</b> page with the task of assembling different random pizzas and racing against the clock. After you serve up your creations, check the <b>Leaderboard</b> to see if you have what it takes to be the top Pizza Papi. Visit the <b>Types of Pizza</b> page for detailed instructions and background on every flavor you'll be baking!</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright © Bascon, Margarito</p>
-        <div class="float-right-ref">
-            <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
-        </div>
-    </footer>
+        <footer>
+            <p>Copyright © Bascon, Margarito</p>
+            <div class="float-right-ref">
+                <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
+            </div>
+        </footer>
+    </div>
     <script>
     function openNav() {
         document.getElementById("mySidebar").style.width = "250px";

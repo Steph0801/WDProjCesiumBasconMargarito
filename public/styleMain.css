@@ -11,11 +11,20 @@ html,body{
 }
 
 /* navigation bar format */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+.content {
+  flex:1;
+}
 header {
   background-color: #5b532c;
   justify-content: flex-end;
   padding: 1vw 2vw;
-  min-height:12vh;
+  min-height:10vw;
+  max-height:10vw;
   display:flex;
   align-items:center;
   font-family: Sitka;
@@ -35,6 +44,9 @@ header img {
   border: none;
 }
 #main {
+  flex:1;
+  display: flex;
+  flex-direction: column;
   transition: margin-right .5s, margin-left .5s; 
   width: 100%;
 }
