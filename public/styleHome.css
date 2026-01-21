@@ -5,19 +5,18 @@
 }
 .info-box {
     background-color: #f0f2bd;
-    width: 87%;
+    width: 95%;
     margin: auto;
     padding: 3vw;
     border-radius: 1.5vw;
-    display: inline-block;
-    align-content: center;
-    justify-content: center;
+    display: block;
 }
 .buns {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    line-height:0.05vw;
+    line-height:1;
 }
 .buns img {
     width: 30%;
@@ -26,19 +25,19 @@
 }
 .buns h1{
     font-family: Comic Sans;
-    font-size: 10vw;
+    font-size: clamp(3.75rem, 10vw, 10rem);;
     color: #2b2611;
     margin: 0;
 }
 .info-box p {
     font-family: Segoe Script;
-    font-size: 5vw;
+    font-size: max(1.1rem, 5vw);
     color: #2b2611;
-    margin-top: -1vw;
+    margin-top: 25px;
 }
 /* description format */
 .desc {
-    margin-top:6vw;
+    margin-top:4vw;
     color:#ffecb5;
     font-family:Tahoma;
     font-size:1.5rem;

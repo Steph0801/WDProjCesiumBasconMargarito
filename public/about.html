@@ -27,37 +27,43 @@
             
                 <button class="openbutton" onclick="openNav()">☰</button>
             </header>
-            <section class="titleBox">
-                <h1>About us</h1>
+            <section class="about"> 
+                    <input type="checkbox" id="about-toggle" class="about-toggle-input" hidden>
+                    <label for="about-toggle" class="about-main">
+                        <h1>About us</h1>
+                        <span class="about-dropdown-arrow">⤵︎</span>
+                    </label>
+            
+            <div class="aboutContent collapsible-content">
+                <!-- 'Developers' container + contents -->
+                <div class="name">
+                    <h1>Developers</h1>
+                        <h2>Mandy Cs05</h2>
+                            <div class="nameContent">
+                                <p>Name: Mandalay G. Bascon<br>
+                                    Birthday: May 23, 2011<br>
+                                    Where: Floptropica, Ph<br>
+                                    Fav Pizza: I hate Pizzas<br>
+                                    Fun fact: I like eating ig thats Fun<br>
+                                    "Imagine being allergic to seafood" -Ibn Sina
+                                </p>
+                                <img alt="mandih" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/1d275d63aab70fc72290930778fa19371d821401/assets/70f17979c26877777831041b4be2d3f9_0.jpg"/>
+                            </div>
+                        
+                        <h2>Steph Cs20</h2>
+                            <div class="nameContent">
+                                <p>Name: Stephanie Marie F. Margarito<br>
+                                    Birthday: August 8, 2011<br>
+                                    Where: Bahay, Ph street, Earth, Milky Way<br>
+                                    Fav Pizza: Angel's Spinach Pizza yum🫶👅<br>
+                                    Fun fact: Lowk wanna watch a live surgery😔🤞<br>
+                                    "Sometimes you just have to let's go" - those know who
+                                </p>
+                                <img alt="stephen curry" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/main/assets/584428796_1213575557254712_269272897133341667_n.jpg"/>
+                            </div>
+                </div>
+            </div>
             </section>
-
-            <!-- 'Developers' container + contents -->
-            <section class="name">
-                <h1>Developers</h1>
-                    <h2>Mandy Cs05</h2>
-                        <div class="nameContent">
-                            <p>Name: Mandalay G. Bascon<br>
-                                Birthday: May 23, 2011<br>
-                                Where: Floptropica, Ph<br>
-                                Fav Pizza: I hate Pizzas<br>
-                                Fun fact: I like eating ig thats Fun<br>
-                                "Imagine being allergic to seafood" -Ibn Sina
-                            </p>
-                            <img alt="mandih" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/1d275d63aab70fc72290930778fa19371d821401/assets/70f17979c26877777831041b4be2d3f9_0.jpg"/>
-                        </div>
-                    
-                    <h2>Steph Cs20</h2>
-                        <div class="nameContent">
-                            <p>Name: Stephanie Marie F. Margarito<br>
-                                Birthday: August 8, 2011<br>
-                                Where: Bahay, Ph street, Earth, Milky Way<br>
-                                Fav Pizza: Angel's Spinach Pizza yum🫶👅<br>
-                                Fun fact: Lowk wanna watch a live surgery😔🤞<br>
-                                "Sometimes you just have to let's go" - those know who
-                            </p>
-                            <img alt="stephen curry" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/main/assets/584428796_1213575557254712_269272897133341667_n.jpg"/>
-                        </div>
-                </section>
 
                 <!-- 'History' container + contents -->
             <section class="history">
@@ -85,17 +91,18 @@
 
         <!-- 'Trivia' container + content -->
             <section class="trivia">
-                    <div class="triviaCText">
+                <input type="checkbox" id="trivia-toggle" class="trivia-toggle-input" hidden>
+                <label for="trivia-toggle" class="trivia-main">
                 <h2>Trivia</h2>
+                <span class="dropdown-arrow">⤵︎</span>
+                </label>
+                <div class="triviaContent collapsible-content">
+                    <div class="triviaCText">
                         <p>Despite their pungent flavor, olives are botanically fruits because they grow on trees and contain a hard central pit. Similar to cherries or mangos, they consist of skin, flesh, and a seed, yet they cannot be eaten raw; they require curing, brining, or milling into oil to become palatable. These fruits are typically harvested as green in the early fall or as ripe black olives later in the season.<br>
                             <br>
                             At least 59% of the world population hates olives on pizzas.
                             </p>
                     </div>
-                    <div class="triviaCImages">
-                    <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb" width="160" height="160"/>
-                    <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb" width="160" height="160"/> 
-                    <img alt="pizza logo" src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb" width="160" height="160"/>
                 </div>
             </section>
 
@@ -104,7 +111,7 @@
                 <input type="checkbox" id="credits-toggle" class="credits-toggle-input" hidden>
                 <label for="credits-toggle" class="whatBox-mama">
                     <h1>Credits</h1>
-                    <span class="dropdown-arrow">⤵︎</span>
+                    <span class="credits-dropdown-arrow">⤵︎</span>
                     </label>
                 <div class="creditsContent collapsible-content">
                     <p>links:</p>
@@ -131,7 +138,7 @@
                 <a href="https://www.w3schools.com/tags/att_disabled.asp">W3Schools.com. (n.d.-n). https://www.w3schools.com/tags/att_disabled.asp</a><br>
                 <a href="https://www.w3schools.com/tags/tag_figcaption.asp">W3Schools.com. (n.d.-o). W3Schools Online Web Tutorials. https://www.w3schools.com/tags/tag_figcaption.asp</a>
 
-                <p style="font-size: 1vw; margin-top: 5vw; text-align: center">Logo and sprites were created by Mandy Bascon and Steph Margarito</p>
+                <p style=" margin-top: 5vw; text-align: center">Logo and sprites were created by Mandy Bascon and Steph Margarito</p>
                 </div>
             </section>
         </div>

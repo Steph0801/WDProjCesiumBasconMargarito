@@ -38,7 +38,7 @@ header img {
   z-index: 2000;
 }
 .openbutton {
-  font-size: 1.57vw;
+  font-size: 1.1rem;
   color: #f6ce5e;
   background: none;
   border: none;
@@ -67,7 +67,7 @@ header img {
 .sidebar a {
   padding: 15px 32px;
   text-decoration: none;
-  font-size: 1.57vw;
+  font-size: 1.1rem;
   color: #f6ce5e; 
   display: block;
   transition: 0.3s;
@@ -87,7 +87,7 @@ header img {
   position: absolute;
   top: 5px;
   left: 25px;
-  font-size: 1.57vw;
+  font-size: 1.1rem;
   border-bottom: none;
 }
 /*nav a{
