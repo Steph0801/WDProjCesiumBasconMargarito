@@ -16,19 +16,17 @@ function saveComment() {
         msg: msg,
         date: new Date().toLocaleDateString()
     };
-
-
     let comments = JSON.parse(localStorage.getItem('pp_comment')) || [];
-
-
     comments.unshift(newComment);
-
-
     localStorage.setItem('pp_comment', JSON.stringify(comments));
-
- 
     document.getElementById('userName').value = "";
     document.getElementById('userComment').value = "";
+    loadComments();
+}
+function deleteComment(id) {
+    let comments = JSON.parse(localStorage.getItem('pp_comment')) || [];
+    comments = comments.filter(c => c.id !== id);
+    localStorage.setItem('pp_comment', JSON.stringify(comments));
     loadComments();
 }
 
@@ -40,8 +38,6 @@ function loadComments() {
         board.innerHTML = `<p style="text-align:center; font-family:'Comic Sans MS'; padding: 2vw; opacity: 0.5;">No comments yet. Be the first to start a discussion ★★</p>`;
         return;
     }
-
-
     board.innerHTML = comments.map(c => `
         <div class="comment-card">
             <h3>@${c.name}</h3>
