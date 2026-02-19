@@ -30,7 +30,7 @@ function deleteComment(id) {
     loadComments();
 }
 
-function loadComments() {
+/*function loadComments() {
     const board = document.getElementById('commentBoard');
     const comments = JSON.parse(localStorage.getItem('pp_comment')) || [];
 
@@ -41,6 +41,26 @@ function loadComments() {
     board.innerHTML = comments.map(c => `
         <div class="comment-card">
             <h3>@${c.name}</h3>
+            <p>${c.msg}</p>
+            <small>Posted on ${c.date}</small>
+        </div>
+    `).join('');
+}*/
+
+function loadComments() {
+    const board = document.getElementById('commentBoard');
+    const comments = JSON.parse(localStorage.getItem('pp_comment')) || [];
+
+    if (comments.length === 0) {
+        board.innerHTML = `<p style="text-align:center; font-family:'Comic Sans MS'; padding: 2vw; opacity: 0.5;">No comments yet. Be the first to start a discussion ★★</p>`;
+        return;
+    }
+    board.innerHTML = comments.map(c => `
+        <div class="comment-card">
+            <div class="comment-header">
+                <h3>@${c.name}</h3>
+                <button class="delete-btn" onclick="deleteComment(${c.id})">×</button>
+            </div>
             <p>${c.msg}</p>
             <small>Posted on ${c.date}</small>
         </div>
