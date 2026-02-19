@@ -40,6 +40,29 @@
     background-color: #fffdec;
     box-sizing: border-box;
 }
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5vw;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ca7842;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    color: #2b2611;
+    transform: scale(1.2);
+}
 
 #postBtn {
     align-self: flex-end;
