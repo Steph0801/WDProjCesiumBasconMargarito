@@ -1,0 +1,69 @@
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    padding: 2vw;
+    background-color: #f0f2bd;
+}
+
+.comment-form input, 
+.comment-form textarea {
+    width: 100%;
+    padding: 1vw;
+    border: 2px solid #ca7842;
+    border-radius: 1vw;
+    font-family: "Comic Sans MS";
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    background-color: #fffdec;
+    box-sizing: border-box;
+}
+
+#postBtn {
+    align-self: flex-end;
+    background-color: #ca7842;
+    color: white;
+    border: none;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#postBtn:hover {
+    background-color: #2b2611;
+    transform: scale(1.05);
+}
+
+
+.comment-card {
+    background: #fbdc88;
+    margin: 1.5vw 2vw;
+    padding: 1.5vw;
+    border-radius: 1vw;
+    border-left: 8px solid #ca7842;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.comment-card h3 {
+    margin: 0;
+    font-family: "Libre Baskerville";
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: #2b2611;
+}
+
+.comment-card p {
+    margin: 0.5vw 0;
+    font-family: "Comic Sans MS";
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.4;
+}
+
+.comment-card small {
+    display: block;
+    margin-top: 0.5vw;
+    opacity: 0.6;
+    font-family: "Comic Sans MS";
+    font-size: 0.8rem;
+}
