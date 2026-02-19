@@ -37,7 +37,7 @@ function loadComments() {
     const comments = JSON.parse(localStorage.getItem('pp_comment')) || [];
 
     if (comments.length === 0) {
-        board.innerHTML = `<p style="text-align:center; font-family:'Comic Sans MS'; padding: 2vw; opacity: 0.5;">No cooments yet. Be the first to start a discussion ★★</p>`;
+        board.innerHTML = `<p style="text-align:center; font-family:'Comic Sans MS'; padding: 2vw; opacity: 0.5;">No comments yet. Be the first to start a discussion ★★</p>`;
         return;
     }
 
