@@ -1,6 +1,6 @@
 // 1. Imports from Firebase CDN
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
-import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
 
 // 2. Your Firebase Configuration (DO NOT CHANGE)
 const firebaseConfig = {
@@ -41,11 +41,6 @@ window.saveComment = function() {
     document.getElementById('userComment').value = "";
 };
 
-// 5. Function to Delete
-window.deleteComment = function(id) {
-    const itemRef = ref(db, `pp_comment/${id}`);
-    remove(itemRef);
-};
 
 // 6. REALTIME LISTENER: This makes you see others' comments instantly
 onValue(commentsRef, (snapshot) => {
@@ -57,18 +52,15 @@ onValue(commentsRef, (snapshot) => {
         return;
     }
 
-    // Convert the database object into an array and sort by Newest First
     const commentsArray = Object.keys(data).map(key => ({
         id: key,
         ...data[key]
     })).sort((a, b) => b.timestamp - a.timestamp);
 
-    // Render the comments to the screen
     board.innerHTML = commentsArray.map(c => `
         <div class="comment-card">
             <div class="comment-header">
                 <h3>@${c.name}</h3>
-                <button class="delete-btn" onclick="deleteComment('${c.id}')">×</button>
             </div>
             <p>${c.msg}</p>
             <small>Posted on ${c.date}</small>
