@@ -1,3 +1,26 @@
+.whatBox{
+    background-color: #f0f2bd;
+    height: auto;
+    margin: 2vw 2vw 0 2vw;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    display: block;
+    transition: border-radius 0.3s ease;
+    font-size: 5vw;
+    color:#2b2611;
+}
+.whatBox-mama{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid #ca7842;
+    position:relative;
+}
+.whatBox-main h1{
+    margin: 0;
+}
 .comment-form {
     display: flex;
     flex-direction: column;
