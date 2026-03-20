@@ -32,4 +32,4 @@ Users will be enabled to delete or update their uploaded comments under the "Com
 
 **Credits:** The sources we used will be linked here.
 ### Wireframe
-[Website Concept and Vision](https://www.canva.com/design/DAG3FCfLaWM/6FfgqhazStQyZTbIpLlUkg/edit?utm_content=DAG3FCfLaWM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Website Concept and Vision](https://docs.google.com/document/d/1tIdt_GgUVukvPSN_Ku-1nAo0wfrliP0-7v8zcD6OGao/edit?tab=t.msl25t3qbih4)
