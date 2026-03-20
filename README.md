@@ -30,7 +30,7 @@ The website introduces the visitors to different pizza flavors featured in a min
 **Credits:** The sources we used will be linked here.
 
 ### FINAL MODIFICATION PROPOSAL
-Users will be enabled to delete or update their uploaded comments under the "Comments" webpage. Buttons for deleting or updating will be shown upon clicking the three-dots menu icon located on the upper-right corner of a given comment. CRUD operations (UD) will be based on this website: https://firebase.google.com/docs/database/web/read-and-write, due to the nature of our database (Firebase Database).
+Users will be enabled to delete or update their uploaded comments under the "Comments" webpage. Buttons for deleting or updating will be shown upon hovering on a given comment as shown in page 12 in the wireframe. CRUD operations (UD) will be primarily based on this website: https://firebase.google.com/docs/database/web/read-and-write, due to the nature of our database (Firebase Database).
 
 ### Wireframe
 [Website Concept and Vision](https://www.canva.com/design/DAHEdj0glPw/1Ig0E0MwOxB7gdHNVN4NyA/edit)
