@@ -27,9 +27,10 @@ The website introduces the visitors to different pizza flavors featured in a min
 
 **Comments:** This will serve as a platform where users can anonymously give comments or feedback regarding the website.
 
-**FINAL MODIFICATION PROPOSAL**
+**Credits:** The sources we used will be linked here.
+
+### FINAL MODIFICATION PROPOSAL
 Users will be enabled to delete or update their uploaded comments under the "Comments" webpage. Buttons for deleting or updating will be shown upon clicking the three-dots menu icon located on the upper-right corner of a given comment. CRUD operations (UD) will be based on this website: https://firebase.google.com/docs/database/web/read-and-write, due to the nature of our database (Firebase Database).
 
-**Credits:** The sources we used will be linked here.
 ### Wireframe
 [Website Concept and Vision](https://www.canva.com/design/DAHEdj0glPw/1Ig0E0MwOxB7gdHNVN4NyA/edit)
