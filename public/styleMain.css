@@ -6,8 +6,12 @@
 html,body{
   width:100%;
   height: 100%;
-    background-color: #ca7842;
-    overflow-x: hidden;
+  background-image: url(https://github.com/Steph0801/WDProjCesiumBasconMargarito/blob/main/assets/1Q4_mainbackgroundfromnowon.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 /* navigation bar format */
