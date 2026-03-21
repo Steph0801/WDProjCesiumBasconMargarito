@@ -1,18 +1,16 @@
 .info {
-  padding-top: 5vw;
-  padding-bottom: 10vw;
   text-align: center;
+  width: 100%;
 }
 
 .info-box {
   background-color: rgba(240, 242, 189, 0.85);
   width: 70vw;
-  margin: auto;
   padding: 3.5vw;
   border-radius: 7vw;
   box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
   border: 0.2vw solid rgba(255, 255, 255, 0.5);
-}
+  display: inline-block;
 
 .buns h1 {
   font-family: 'Comic Sans MS', cursive;
@@ -34,7 +32,6 @@
   letter-spacing: 1.5vw;
   margin-top: 2vw;
   color: #2b2611;
-  display: inline-block;
 }
 
 .desc {
@@ -43,13 +40,12 @@
   overflow: hidden;
   transition: all 0.6s ease-in-out;
   width: 65vw;
-  margin: 0 auto;
+  margin: 2vw auto 0;
 }
 
 .desc.show {
   max-height: 100vw;
   opacity: 1;
-  margin-top: 2.5vw;
 }
 
 .desc p {

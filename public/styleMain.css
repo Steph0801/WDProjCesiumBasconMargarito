@@ -44,7 +44,6 @@ header:hover {
   font-weight: bold;
   font-size: 2.2vw;
   color: #2b2611;
-  cursor: pointer;
 }
 
 .nav-links {
@@ -67,11 +66,20 @@ header:hover .nav-links {
   font-size: 1.4vw;
   padding: 0.8vw 0;
   display: block;
-  transition: background 0.2s;
 }
 
 .nav-links li a:hover {
   background-color: rgba(246, 206, 94, 0.5);
+}
+
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
 }
 
 .footer-link {
@@ -92,11 +100,3 @@ footer {
   font-family: "Comic Sans MS", cursive;
   font-size: 1.3vw;
   border: 0.1vw solid rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease, background-color 0.3s;
-  white-space: nowrap;
-}
-
-footer:hover {
-  transform: scale(1.05);
-  background-color: rgba(240, 242, 189, 0.95);
-}
