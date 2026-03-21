@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <div class="site">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
@@ -35,15 +34,21 @@
                             <h1>Pizza Papi</h1>
                         </div>
                         <p>your pizza haven</p>
+                        
+                        <div class="handler" onclick="toggleDesc()">
+                            &#9734; &#9734; &#9734;
+                        </div>
                     </div>
 
-                    <div class="desc">
-                        <p>Welcome to <b>Pizza Papi</b>, your ultimate interactive online station pivoted on the world's favorite food! This site features a fun, engaging appeal with pizza themed colors and informative content. Head over to the <b>About</b> page to meet the creators and discover facts and origin about pizza.<br>
-                            <br>
-                            Ready to have fun? Challenge yourself on the <b>Game</b> page with the task of assembling different random pizzas and racing against the clock. After you serve up your creations, check the <b>Leaderboard</b> to see if you have what it takes to be the top Pizza Papi. Visit the <b>Types of Pizza</b> page for detailed instructions and background on every flavor you'll be baking!</p>
+                    <div id="descContainer" class="desc">
+                        <p>
+                            Welcome to <b>Pizza Papi</b>, your ultimate interactive online station pivoted on the world's favorite food! This site features a fun, engaging appeal with pizza themed colors and informative content. Head over to the <b>About</b> page to meet the creators and discover facts and origin about pizza.<br><br>
+                            Ready to have fun? Challenge yourself on the <b>Game</b> page with the task of assembling different random pizzas and racing against the clock. After you serve up your creations, check the <b>Leaderboard</b> to see if you have what it takes to be the top Pizza Papi. Visit the <b>Types of Pizza</b> page for detailed instructions and background on every flavor you'll be baking!
+                        </p>
                     </div>
                 </section>
             </div>
+
             <footer>
                 <p>Copyright © Bascon, Margarito</p>
                 <div class="float-right-ref">
@@ -54,6 +59,7 @@
     </div>
 
     <script>
+        // Sidebar Controls
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("main").style.marginRight = "250px";
@@ -64,6 +70,12 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginRight = "0";
             document.getElementById("main").style.marginLeft = "0";
+        }
+
+        // Description Toggle
+        function toggleDesc() {
+            const container = document.getElementById("descContainer");
+            container.classList.toggle("show");
         }
     </script>
 </body>

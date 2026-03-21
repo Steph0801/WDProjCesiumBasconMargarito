@@ -1,44 +1,86 @@
-
 .info {
-    text-align:center;
-    padding-top: 3vw;
+  text-align: center;
+  padding-top: 3vw;
 }
+
 .info-box {
-    background-color: #f0f2bd;
-    width: 95%;
-    margin: auto;
-    padding: 3vw;
-    border-radius: 1.5vw;
-    display: block;
+  background-color: rgba(240, 242, 189, 0.9); 
+  max-width: 900px;
+  margin: auto;
+  padding: 3vw;
+  border-radius: 2vw;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
 .buns {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    line-height:1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 1;
 }
+
 .buns img {
-    width: 30%;
-    max-width: 320px;
-    height: auto;
+  width: 25%;
+  max-width: 150px;
+  height: auto;
 }
-.buns h1{
-    font-family: Comic Sans;
-    font-size: clamp(3.75rem, 10vw, 10rem);;
-    color: #2b2611;
-    margin: 0;
+
+.buns h1 {
+  font-family: "Comic Sans MS", cursive;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  color: #2b2611;
+  margin: 0;
 }
+
 .info-box p {
-    font-family: Segoe Script;
-    font-size: max(1.1rem, 5vw);
-    color: #2b2611;
-    margin-top: 25px;
+  font-family: "Segoe Script", cursive;
+  font-size: clamp(1rem, 3vw, 2.5rem);
+  color: #2b2611;
+  margin-top: 15px;
 }
-/* description format */
+
+
+.handler {
+  font-size: 2.5rem;
+  color: #5b532c;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.handler:hover {
+  transform: scale(1.1);
+  color: #fb7950;
+}
+
+
 .desc {
-    margin-top:4vw;
-    color:#ffecb5;
-    font-family:Tahoma;
-    font-size:1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 800px;
+}
+
+
+.desc.show {
+  max-height: 1000px; 
+  opacity: 1;
+  margin-top: 3vw;
+}
+
+.desc p {
+  background-color: rgba(43, 38, 17, 0.85);
+  color: #ffecb5;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.3rem;
+  padding: 2vw;
+  border-radius: 1.5vw;
+  line-height: 1.6;
+  border: 2px solid #f6ce5e;
 }
