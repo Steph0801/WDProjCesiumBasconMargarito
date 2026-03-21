@@ -1,5 +1,5 @@
 .info {
-  padding-top: 12vw;
+  padding-top: 10vw;
   text-align: center;
 }
 
@@ -34,11 +34,6 @@
   margin-top: 1.5vw;
   color: #2b2611;
   display: inline-block;
-  transition: transform 0.2s;
-}
-
-.handler:hover {
-  transform: scale(1.1);
 }
 
 .desc {

@@ -19,44 +19,44 @@ header {
   position: fixed;
   top: 2vw;
   left: 5vw;
-  width: 12vw;
-  height: 5vw;
-  background-color: rgba(240, 242, 189, 0.8);
+  width: 15vw;
+  max-height: 5vw;
+  background-color: rgba(240, 242, 189, 0.85);
   backdrop-filter: blur(0.5vw);
-  border-radius: 5vw;
+  border-radius: 2.5vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0 1.5vw;
-  transition: width 0.5s ease-in-out, background-color 0.3s;
+  padding: 1vw 0;
+  transition: max-height 0.6s ease-in-out, border-radius 0.4s;
   z-index: 2000;
   border: 0.15vw solid rgba(255, 255, 255, 0.4);
   overflow: hidden;
 }
 
 header:hover {
-  width: 85vw;
-  background-color: rgba(240, 242, 189, 0.95);
+  max-height: 40vw; 
+  border-radius: 3vw;
 }
 
 .logo-container {
-  min-width: 9vw;
-  display: flex;
-  align-items: center;
   font-family: 'Sitka', serif;
   font-weight: bold;
   font-size: 2vw;
   color: #2b2611;
-  cursor: default;
+  margin-bottom: 1.5vw;
+  cursor: pointer;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5vw;
+  flex-direction: column;
+  gap: 1vw;
   list-style: none;
-  margin-left: 2vw;
+  width: 100%;
+  text-align: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  white-space: nowrap;
+  transition: opacity 0.4s ease;
 }
 
 header:hover .nav-links {
@@ -67,40 +67,38 @@ header:hover .nav-links {
   text-decoration: none;
   color: #2b2611;
   font-family: 'Sitka', serif;
-  font-size: 1.6vw;
-  padding: 0.5vw 1.2vw;
-  border-radius: 5vw;
+  font-size: 1.5vw;
+  padding: 0.5vw 0;
+  display: block;
+  width: 100%;
   transition: background 0.3s;
 }
 
 .nav-links a:hover {
-  background-color: #f6ce5e;
+  background-color: rgba(246, 206, 94, 0.6);
 }
 
-.nav-links a.nav-active-page {
-  background-color: #f6ce5e;
-  font-weight: bold;
+.footer-link {
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 5vw auto 2vw auto;
 }
 
 footer {
-  position: relative;
-  width: 40vw;
-  margin: 5vw 0 2vw 5vw;
   background-color: rgba(240, 242, 189, 0.75);
   backdrop-filter: blur(0.5vw);
-  padding: 1vw 2.5vw;
+  padding: 1vw 3vw;
   border-radius: 5vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #2b2611;
   font-family: "Comic Sans MS", cursive;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   border: 0.1vw solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
 }
 
-footer a {
-  text-decoration: none;
-  color: #2b2611;
-  font-weight: bold;
+footer:hover {
+  transform: scale(1.05);
+  background-color: rgba(240, 242, 189, 0.95);
 }
