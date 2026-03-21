@@ -3,79 +3,55 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝕻𝖎𝖟𝖟𝖆 𝕻𝖆𝖕𝖎</title>
-    <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb">
+    <title>Pizza Papi</title>
     <link rel="stylesheet" href="styleMain.css">
     <link rel="stylesheet" href="styleHome.css">
 </head>
-
 <body>
-    <div class="site">
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
-            <a href="home.html" class="nav-active-page">Home</a>
-            <a href="types.html">Types of Pizza</a>
-            <a href="game.html">Game</a>
-            <a href="board.html">Leaderboard</a>
-            <a href="about.html">About</a>
-            <a href="comments.html">Comments</a>
+
+    <header>
+        <div class="logo-container">
+            <span>Home</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="types.html">Types of Pizza</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="board.html">Leaderboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </header>
 
-        <div id="main">
-            <div class="content">
-                <header>
-                    <button class="openbutton" onclick="openNav()">☰</button>
-                </header>
-
-                <section class="info">
-                    <div class="info-box">
-                        <div class="buns">
-                            <img src="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb" alt="pizza logo">
-                            <h1>Pizza Papi</h1>
-                        </div>
-                        <p>your pizza haven</p>
-                        
-                        <div class="handler" onclick="toggleDesc()">
-                            &#9734; &#9734; &#9734;
-                        </div>
-                    </div>
-
-                    <div id="descContainer" class="desc">
-                        <p>
-                            Welcome to <b>Pizza Papi</b>, your ultimate interactive online station pivoted on the world's favorite food! This site features a fun, engaging appeal with pizza themed colors and informative content. Head over to the <b>About</b> page to meet the creators and discover facts and origin about pizza.<br><br>
-                            Ready to have fun? Challenge yourself on the <b>Game</b> page with the task of assembling different random pizzas and racing against the clock. After you serve up your creations, check the <b>Leaderboard</b> to see if you have what it takes to be the top Pizza Papi. Visit the <b>Types of Pizza</b> page for detailed instructions and background on every flavor you'll be baking!
-                        </p>
-                    </div>
-                </section>
+    <div id="main">
+        <section class="info">
+            <div class="info-box">
+                <div class="buns">
+                    <h1>Pizza Papi</h1>
+                </div>
+                <p>your pizza haven</p>
+                <div class="handler" onclick="toggleDesc()">☆☆☆</div>
             </div>
 
-            <footer>
-                <p>Copyright © Bascon, Margarito</p>
-                <div class="float-right-ref">
-                    <a href="about.html">Credits</a>
-                </div>
-            </footer>
-        </div>
+            <div id="descContainer" class="desc">
+                <p>
+                    Welcome to <b>Pizza Papi</b>, your ultimate interactive online station pivoted on the world's favorite food! 
+                    This site features a fun, engaging appeal with pizza themed colors and informative content. 
+                    Head over to the <b>About</b> page to meet the creators and discover facts and origin about pizza.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyright © Bascon, Margarito</p>
+            <div class="float-right-ref">
+                <a href="about.html">Credits</a>
+            </div>
+        </footer>
     </div>
 
     <script>
-        // Sidebar Controls
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginRight = "250px";
-            document.getElementById("main").style.marginLeft = "-250px"; 
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-
-        // Description Toggle
         function toggleDesc() {
-            const container = document.getElementById("descContainer");
-            container.classList.toggle("show");
+            document.getElementById("descContainer").classList.toggle("show");
         }
     </script>
 </body>
