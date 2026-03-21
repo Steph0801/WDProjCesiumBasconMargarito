@@ -72,10 +72,10 @@ header:hover .nav-links {
   background-color: rgba(246, 206, 94, 0.5);
 }
 
-
+/* CENTERING CONTAINER */
 #main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,3 +100,5 @@ footer {
   font-family: "Comic Sans MS", cursive;
   font-size: 1.3vw;
   border: 0.1vw solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
