@@ -11,7 +11,7 @@ body{
 }
 .info-box{
     background-color: #f0f2bd;
-    width: 95%;
+    width: 100%;
     margin: auto;
     padding: 3vw;
     border-radius: 1.5vw;
@@ -70,7 +70,7 @@ body{
 }
 #gameArea{
     position:relative;
-    width:95%;
+    width:95vw;
     height:75vw;
     background-color:#f0f2bd;
     margin:1vw auto;
