@@ -20,6 +20,7 @@ body{
     justify-content: center;
     color:#2b2611;
     font-size:5vw;
+    font-family: 'Libre Baskerville';
     border: 0.15vw solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
 }
@@ -72,10 +73,11 @@ body{
     position:relative;
     width:95vw;
     height:75vw;
-    background-color:#f0f2bd;
+    background-color: rgba(240, 242, 189, 0.75);
     margin:1vw auto;
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
 }
-/* formats user input */
 #name{
     margin-top:1vw;
     font-family:cursive;
