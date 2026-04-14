@@ -40,15 +40,13 @@
 .desc {
   max-height: 0;
   opacity: 0;
-  overflow: auto;
+  overflow: hidden;
   transition: all 0.6s ease-in-out;
   width: 65vw;
 }
 
 .desc.show {
-  height: 200px;        /* Fixed height to trigger vertical scroll */
-  width: 300px;         /* Optional: Fixed width */
-  overflow-y: auto;
+  max-height: 100vw;
   opacity: 1;
   margin-top: 2vw;
 }
