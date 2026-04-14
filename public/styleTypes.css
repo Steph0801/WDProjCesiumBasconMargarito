@@ -1,5 +1,128 @@
 .every-layout {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Smaller Title Box */
+.titleBox {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 35vw;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    backdrop-filter: blur(5px);
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+}
+
+.buns h1 {
+    font-family: 'Serif', 'Times New Roman';
+    font-size: 5vw;
+    margin: 0;
+    color: #1e3d1e;
+}
+
+.the-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.typeBox {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 55vw; 
+    height: 30vw; 
+    border-radius: 1vw;
+    padding: 2vw 4vw;
+    display: flex;
+    position: relative;
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.sliding-door {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliding-door.active {
+    display: flex;
+}
+
+.the-desc {
+    width: 55%;
+}
+
+.the-desc h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3vw;
+    color: #2b2611;
+    margin-bottom: 1vw;
+}
+
+.the-desc p {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2vw;
+    line-height: 1.4;
+    color: #333;
+}
+
+.pizza-image-box {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.4vw solid #4a3421;
+    background: #fff;
+}
+
+.pizza-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-btn {
+    background-color: #f0f2bd;
+    border: none;
+    font-size: 2.5vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #e2e4a8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+    left: -2vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: -2vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*.every-layout {
+    display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
