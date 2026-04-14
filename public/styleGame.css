@@ -10,7 +10,7 @@ body{
 }
 .info-box{
     background-color: rgba(240, 242, 189, 0.75);
-    width: 70vw;
+    width: 60vw;
     margin: auto;
     padding: 3.5vw;
     border-radius:7vw;
@@ -19,7 +19,7 @@ body{
     align-content: center;
     justify-content: center;
     color:#2b2611;
-    font-size:5vw;
+    font-size:4.5vw;
     font-family: 'Libre Baskerville';
     border: 0.15vw solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
