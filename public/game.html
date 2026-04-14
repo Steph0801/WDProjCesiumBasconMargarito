@@ -12,15 +12,16 @@
 <body>
     <div class="site">
         <!-- navigation -->
-        <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
-                    <a href="home.html">Home</a>
-                    <a href="types.html">Types of Pizza</a>
-                    <a href="game.html" class="nav-active-page">Game</a>
-                    <a href="board.html">Leaderboard</a>
-                    <a href="about.html">About</a>
-                    <a href="comments.html">Comments</a>
-        </div>
+        <header>
+            <div class="logo-container"><span>Game</span></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="types.html">Types of Pizza</a></li>
+                <li><a href="board.html">Leaderboard</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+        </header>
 
         <div id="main">
             <div class="content">
@@ -98,12 +99,9 @@
                 </section>
             </div>
 
-            <footer>
-            <p>Copyright © Bascon, Margarito</p>
-                <div class="float-right-ref">
-                    <a href="about.html">Credits</a>
-                </div>
-            </footer>
+            <a href="about.html" class="footer-link">
+                <footer><p>Copyright © Bascon, Margarito</p></footer>
+            </a>
         </div> 
 
         <!-- leaderboard setup (firebase database) -->

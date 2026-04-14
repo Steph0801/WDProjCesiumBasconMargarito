@@ -12,15 +12,16 @@
 <body>
 
 <div class="site">
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
-        <a href="home.html">Home</a>
-        <a href="types.html">Types of Pizza</a>
-        <a href="game.html">Game</a>
-        <a href="board.html">Leaderboard</a>
-        <a href="about.html" class="nav-active-page">About</a>
-        <a href="comments.html">Comments</a>
-    </div>
+    <header>
+        <div class="logo-container"><span>About</span></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="types.html">Types of Pizza</a></li>
+            <li><a href="game.html">Game</a></li>
+                <li><a href="board.html">Leaderboard</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </header>
 
     <div id="main">
         <div class="content">
@@ -143,12 +144,9 @@
                 </div>
             </section>
         </div>
-    <footer>
-       <p>Copyright © Bascon, Margarito</p>
-        <div class="float-right-ref">
-            <a href="https://steph0801.github.io/WDProjCesiumBasconMargarito/public/about.html">Credits</a>
-        </div>
-        </footer>
+        <a href="about.html" class="footer-link">
+            <footer><p>Copyright © Bascon, Margarito</p></footer>
+        </a>
     </body> 
     <script>
          function openNav() {
