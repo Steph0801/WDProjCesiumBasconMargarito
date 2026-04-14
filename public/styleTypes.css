@@ -6,11 +6,13 @@ background-color: rgba(240, 242, 189, 0.85);
   border-radius: 7vw;
   box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
   border: 0.2vw solid rgba(255, 255, 255, 0.5);
-    font-size: 7.5vw;
+    font-size: 5vw;
     color:#2b2611;
     line-height: 1;
     text-align: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* pizza types container, content, collapsible format + algorithm */
 .pep, .cheese, .hawaiian, .vegan{
