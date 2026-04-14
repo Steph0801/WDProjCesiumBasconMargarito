@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     width: 100vw;
     height: 100vh;
-    padding-top: 15vh;
+    padding-top: 8vh;
 }
 
 .titleBox {
@@ -29,9 +29,9 @@
 .the-container {
     display: flex;
     align-items: center;
-    position: relative;
+    position: relative; 
     justify-content: center;
-    width: 100%;
+    width: 70vw;
 }
 
 .typeBox {
@@ -99,11 +99,12 @@
     font-size: 2.5vw;
     padding: 0.5vw 1vw;
     border-radius: 0.5vw;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
+    z-index: 10; 
     box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.1);
     transition: 0.3s;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-btn:hover {
@@ -112,15 +113,11 @@
 }
 
 .prev {
-    left: -2vw;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 2vw;
 }
 
 .next {
-    right: -2vw;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 2vw;
 }
 
 /*.every-layout {
