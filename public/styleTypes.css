@@ -5,9 +5,9 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    margin-top: -10vh;
 }
 
-/* Smaller Title Box */
 .titleBox {
     background-color: rgba(240, 242, 189, 0.75);
     width: 35vw;
@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%
 }
 
 .typeBox {
