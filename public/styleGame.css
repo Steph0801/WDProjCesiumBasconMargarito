@@ -1,20 +1,19 @@
-/* ensures no undesired gaps */
+
 body{
     margin:0;
     padding:0;
 }
-/* header title "Pizzaria Papia" format */
 .info{
     text-align:center;
     padding-top: 3vw;
     width:100%;
 }
 .info-box{
-    background-color: #f0f2bd;
+    background-color: rgba(240, 242, 189, 0.75);
     width: 100%;
     margin: auto;
-    padding: 3vw;
-    border-radius: 1.5vw;
+    padding: 0.5vw;
+    border-radius: 2vw;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -22,7 +21,6 @@ body{
     color:#2b2611;
     font-size:5vw;
 }
-/* game buttons/displays format */
 .gameBtn{
     display:flex;
     align-items: center;
