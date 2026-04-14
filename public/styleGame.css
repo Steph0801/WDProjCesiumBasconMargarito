@@ -5,15 +5,15 @@ body{
 }
 .info{
     text-align:center;
-    padding-top: 3vw;
+    padding-top: 2vw;
     width:100%;
 }
 .info-box{
     background-color: rgba(240, 242, 189, 0.75);
-    width: 100%;
+    width: 70vw;
     margin: auto;
-    padding: 1vw 2vw;
-    border-radius: 1vw;
+    padding: 3.5vw;
+    border-radius:7vw;
     display: flex;
     flex-direction: column;
     align-content: center;
