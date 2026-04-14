@@ -12,14 +12,16 @@ body{
     background-color: rgba(240, 242, 189, 0.75);
     width: 100%;
     margin: auto;
-    padding: 0.5vw;
-    border-radius: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     color:#2b2611;
     font-size:5vw;
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
 }
 .gameBtn{
     display:flex;
