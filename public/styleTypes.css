@@ -1,21 +1,18 @@
 
 .titleBox{
-background-color: rgba(240, 242, 189, 0.85);
-  width: 30vw;
-  padding: 1.5vw;
-  border-radius: 73.5vw;
-  box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
-  border: 0.2vw solid rgba(255, 255, 255, 0.5);
-    font-size: 3vw;
-    color:#2b2611;
-    line-height: 1;
-    text-align: center;
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+    background-color: rgba(240, 242, 189, 0.85);
+    width: 70vw;
+    padding: 3.5vw;
+    border-radius: 7vw;
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
+    border: 0.2vw solid rgba(255, 255, 255, 0.5);
 }
+.buns h1 {
+    font-family: 'Libre Baskerville';
+    font-size: 3vw;
+    color: #2b2611;
+    line-height: 1;
+  }
 /* pizza types container, content, collapsible format + algorithm */
 .pep, .cheese, .hawaiian, .vegan{
     background-color: #fbdc88;
