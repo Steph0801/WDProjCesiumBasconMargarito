@@ -5,7 +5,7 @@
     justify-content: flex-start; 
     width: 100vw;
     height: 100vh;
-    padding-top: 8vh;
+    padding-top: 5vh;
 }
 
 .titleBox {
@@ -31,7 +31,7 @@
     align-items: center;
     position: relative; 
     justify-content: center;
-    width: 70vw;
+    width: 55vw;
 }
 
 .typeBox {
@@ -113,11 +113,11 @@
 }
 
 .prev {
-    left: 2vw;
+    left: -5vw;
 }
 
 .next {
-    right: 2vw;
+    right: -5vw;
 }
 
 /*.every-layout {
