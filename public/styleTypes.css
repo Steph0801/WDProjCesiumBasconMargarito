@@ -31,15 +31,15 @@
     align-items: center;
     position: relative; 
     justify-content: center;
-    width: 55vw;
+    width: 48vw;
 }
 
 .typeBox {
     background-color: rgba(240, 242, 189, 0.75);
-    width: 55vw; 
-    height: 30vw; 
+    width: 48vw; 
+    height: 25vw; 
     border-radius: 1vw;
-    padding: 2vw 4vw;
+    padding: 1vw 2vw;
     display: flex;
     position: relative;
     border: 0.15vw solid rgba(255, 255, 255, 0.4);
