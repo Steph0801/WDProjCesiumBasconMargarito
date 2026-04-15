@@ -1,0 +1,331 @@
+/* header title "About us" format */
+.about{
+    background-color: #f0f2bd;
+    height: auto;
+    margin: 2vw 2vw 0 2vw;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    display: block;
+    transition: border-radius 0.3s ease;
+    font-size: 5vw;
+    color:#2b2611;
+}
+.about-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid #ca7842;
+    position:relative;
+}
+.about-main h1{
+    margin: 0;
+}
+.about-toggle-input {
+    display: none;
+}
+.about-toggle-input:checked ~ .aboutContent {
+    max-height: 5000px;
+    display:block;
+    width:auto;
+}
+.about-toggle-input:checked ~ .about-main .about-dropdown-arrow {
+    transform: rotate(180deg);
+}
+.about-dropdown-arrow{
+    position:absolute;
+    right:2vw;
+    font-size: 2em;
+    transition: transform 0.3s ease;
+    padding-left: 1vw;
+}
+.aboutContent{
+    background-color: #f0f2bd;
+    display:block;
+    width: auto;
+    margin: 0 2vw 1vw 2vw;
+    max-height:0;
+    border-radius: 0 0 1.5vw 1.5vw;
+    overflow:hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+.aboutContent p{
+    margin-right:4vw;
+    text-align: left;
+    font-family: "Comic Sans MS";
+    flex: 3 1 75%
+}
+/* developers container format */
+.name{
+    height: auto;
+    display:block;
+    font-size: 3vw;
+    color:#2b2611;
+}
+/* text format for h1 and h2 under 'name' container */
+.name h1 {
+    font-family: Libre Baskerville;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    padding-bottom: 0.5vw;
+    width: 100%;
+}
+.name h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: left;
+    margin-bottom: 1vw;
+    width: 100%;
+}
+/* 'name' container content format */
+.nameContent{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+.nameContent p{
+    margin-right:0;
+    margin-left: 0;
+    text-align: left;
+        font-family: "Comic Sans MS";
+        line-height: normal;
+    flex-grow: 1;
+}
+.name img {
+    height:20vw;
+    order: -1;
+    margin-right: 2vw;
+}
+/* 'history' content format*/
+.history{
+    background-color: #fbdc88;
+    margin: 1vw 2vw 1vw 2vw;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    color:#2b2611;
+    overflow: hidden;
+}
+.history-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5vw;
+    border-bottom: 2px solid #ca7842;
+    position:relative;
+}
+.history h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: center;
+    margin: 0.5vw 0;
+    width: 100%;
+    font-size: 5vw;
+}
+/* collapsible (+history) content format + algorithm */
+.dropdown-arrow {
+    font-size: 2em;
+    transition: transform 0.3s ease;
+    padding-left: 1vw;
+    position:absolute;
+    right:3vw;
+    cursor:pointer;
+}
+.history-toggle-input {
+    display: none;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.history-toggle-input:checked ~ .collapsible-content {
+    max-height: 5000px;
+}
+.history-toggle-input:checked ~ .history-main .dropdown-arrow {
+    transform: rotate(180deg);
+}
+.historyContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height:1;
+}
+.historyContent p{
+    margin-right:4vw;
+    text-align: left;
+    font-family: "Comic Sans MS";
+    flex: 3 1 75%;
+    font-size: clamp(1.1rem, 3vw, 2.8rem);
+    padding: 1.25vw;
+}
+.history-figure {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    width:100%;
+    margin: 0 auto;
+}
+.historyContent .history-figure img {
+    margin-top:5vw;
+    width:clamp(10rem, 25vw, 20rem);
+}
+.historyContent figcaption {
+    font-family: Comic Sans MS;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    line-height: 1.2;
+    padding: 0 0.5vw;
+    color: #2b2611;
+    margin-top:3vw;
+}
+/* trivia content format */
+.trivia {
+    display:block;
+    background-color: #fbdc88;
+    color:#2b2611;
+    gap: 2vw;
+    align-items: stretch;
+    margin: 1vw 2vw 1vw 2vw;
+    padding:1vw 3vw;
+    border-radius: 1.5vw;
+    overflow:hidden;
+}
+.trivia-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5vw;
+    border-bottom: 2px solid #ca7842;
+    position:relative;
+}
+.trivia h2{
+    font-family: "Brush Script MT", "Lucida Handwriting";
+    text-align: center;
+    margin: 0.5vw 0;
+    width: 100%;
+    font-size: 5vw;
+}
+.trivia-toggle-input {
+    display: none;
+}
+.trivia-toggle-input:checked ~ .triviaContent {
+    max-height: 5000px;
+}
+.history-toggle-input:checked ~ .trivia-main .dropdown-arrow {
+    transform: rotate(180deg);
+}
+.triviaCText {
+    flex:1;
+    background-color: #fbdc88;
+    font-size: clamp(1.1rem, 3vw, 2.8rem);
+    border-radius: 1.5vw;
+    padding: 1vw;
+    flex: 1 1 250px;
+}
+.triviaCText p{
+    font-family: "Comic Sans MS";
+    line-height: 1.3;
+    text-align: left;
+    margin: 0;
+}
+/*
+.triviaCImages {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15vw;
+    min-width: 15vw;
+    flex-grow: 0;
+    margin:0 auto;
+    position: relative;
+    right: -10vw;
+}
+.trviaCImages img{
+    width: 5vw;
+    height: 5vw;
+   max-width: 5vw;
+   max-height: 5vw;
+   object-fit: contain;
+   display: block; 
+    order: 1;
+    margin-left: auto;
+    margin-right: 1vw;
+}
+
+/* credits container, content, collapsible format + algorithm */
+.whatBox{
+    background-color: #f0f2bd;
+    height: auto;
+    margin: 2vw 2vw 0 2vw;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    display: block;
+    font-size: 5vw;
+    color:#2b2611;
+    overflow: hidden;
+}
+.whatBox-mama {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-bottom: 1vw;
+border-bottom: 2px solid #ca7842;
+position:relative;
+}
+.whatBox h1 {
+    text-align: center;
+    width: auto;
+}
+.credits-dropdown-arrow {
+    font-size: 2em;
+    transition: transform 0.3s ease;
+    padding-left: 1vw;
+    cursor:pointer;
+    right:3vw;
+    position:absolute;
+}
+.credits-toggle-input {
+    display: none;
+}
+.creditsContent {
+    background-color: #f0f2bd;
+    justify-content: center;
+    border-radius: 0 0 1.5vw 1.5vw;
+    color:#2b2611;
+    display: block;
+}
+.creditsContent p {
+    color:#2b2611;
+    font-family: Comic Sans MS;
+    line-height: 1.3;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+}
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0 2vw;
+}
+.credits-toggle-input:checked ~ .collapsible-content {
+    max-height: 5000px;
+}
+#credits-toggle:checked ~ .whatBox-mama .credits-dropdown-arrow {
+    transform: rotate(180deg);
+}
+.creditsContent a, .creditsContent a:visited, .creditsContent a:active {
+    color:#2b2611;
+    text-decoration: none;
+    display: block;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-family: Comic Sans MS;
+    transition: color 0.3s;
+}
+.creditsContent a:hover, .creditsContent a:visited:hover {
+    color: #bea55f;
+}
