@@ -29,10 +29,7 @@
     <div class="comment-input-section">
         <label for="username">Name:________________</label>
         <input type="text" id="comment-user" placeholder="Your name...">
-        <div class="comment-prompt">
-            <span>Leave a comment ☆</span>
-        </div>
-        <textarea id="comment-text" placeholder="Type your comment..."></textarea>
+        <textarea id="comment-text" placeholder="Leave a comment ☆"></textarea>
         <button onclick="createComment()" id="submit-btn">Post</button>
     </div>
 
@@ -109,8 +106,10 @@
         }
     </script>
     <script>
-    let comments = [];
-    function createComment() {
+let comments = JSON.parse(localStorage.getItem('pizzaComments')) || [];
+renderComments();
+
+function createComment() {
     const nameInput = document.getElementById('comment-user');
     const textInput = document.getElementById('comment-text');
 
@@ -123,15 +122,14 @@
     };
 
     comments.push(newComment);
-    renderComments();
-    
+    saveAndRender();
     nameInput.value = "";
     textInput.value = "";
 }
 
 function deleteComment(id) {
     comments = comments.filter(c => c.id !== id);
-    renderComments();
+    saveAndRender();
 }
 
 function updateComment(id) {
@@ -139,19 +137,25 @@ function updateComment(id) {
     if (newText) {
         const comment = comments.find(c => c.id === id);
         comment.text = newText;
-        renderComments();
+        saveAndRender();
     }
+}
+
+function saveAndRender() {
+    localStorage.setItem('pizzaComments', JSON.stringify(comments));
+    renderComments();
 }
 
 function renderComments() {
     const display = document.getElementById('comments-display');
+    if(!display) return;
     display.innerHTML = "";
 
     comments.forEach(c => {
         display.innerHTML += `
             <div class="comment-card">
                 <span class="comment-handle">@${c.user.toLowerCase().replace(/\s/g, '')}</span>
-                <span class="comment-body">${c.text}</span>
+                <p class="comment-body">${c.text}</p>
                 <div class="comment-actions">
                     <button onclick="updateComment(${c.id})">Update</button>
                     <button onclick="deleteComment(${c.id})">Delete</button>

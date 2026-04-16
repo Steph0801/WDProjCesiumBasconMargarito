@@ -131,14 +131,13 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
-
 .comment-card {
-    background-color: rgba(212, 175, 55, 0.8);
-    padding: 10px 15px;
-    border-radius: 20px;
-    position: relative;
-    transition: background 0.3s;
-    color: #2b2611;
+    background-color: #d4af37;
+    color: #000;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
 }
 
 .comment-card:hover {
