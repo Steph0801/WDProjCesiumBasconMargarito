@@ -40,13 +40,13 @@
     margin-bottom: 1vw;
 }
 
-.yes-row {
+.yes-img {
     display: flex;
     align-items: flex-start;
     gap: 2vw;
 }
 
-.yes-row img {
+.yes-img img {
     width: 15vw;
     height: 15vw;
     object-fit: cover;
