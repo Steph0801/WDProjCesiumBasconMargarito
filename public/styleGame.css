@@ -6,12 +6,15 @@ body{
 /* header title "Pizzaria Papia" format */
 .info{
     text-align:center;
-    padding-top: 3vw;
+    padding-top: 5vw;
     width:100%;
 }
 .info-box{
-    background-color: #f0f2bd;
-    width: 100%;
+    background-color: rgba(240, 242, 189, 0.85);
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
+  border: 0.2vw solid rgba(255, 255, 255, 0.5);
+    width: 60vw;
+    height: 28vw;
     margin: auto;
     padding: 3vw;
     border-radius: 1.5vw;
@@ -20,7 +23,8 @@ body{
     align-content: center;
     justify-content: center;
     color:#2b2611;
-    font-size:5vw;
+    font-size: 4vw;
+    font-family: 'Libre Baskerville';
 }
 /* game buttons/displays format */
 .gameBtn{
@@ -38,11 +42,11 @@ body{
     padding: 0.053vw 0.083vw;
     background-color:#f6ce5e;
     text-decoration: none;
-    border-radius: 1.07vw;
+    border-radius: 1vw;
     margin-right: 0.078vw;
-    width:10vw;
-    height:5vw;
-    font-size:2vw;
+    width:8vw;
+    height:3.5vw;
+    font-size:1.5vw;
     font-family: cursive;
 }
 .gameBtn a{
@@ -79,14 +83,14 @@ body{
 #name{
     margin-top:1vw;
     font-family:cursive;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color:#4b352a;
 }
 #nameId{
     margin-top:1vw;
     text-align:center;
     color:#4b352a;
-    font-size:3vw;
+    font-size: 2.5vw;
     background-color:#f0f2bd;
     border:none;
     border-bottom:0.5vw solid #4b352a;

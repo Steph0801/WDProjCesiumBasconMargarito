@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝕻𝖎𝖟𝖟𝖆 𝕻𝖆𝖕𝖎</title>
+    <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/d82c4e73-fe77-422b-b21a-09247c452edb">
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="stylesheet" href="styleFacts.css">
+</head>
+
+<body>
+
+<div class="site">
+    <header>
+        <div class="logo-container"><span>Facts</span></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="types.html">Types of Pizza</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="board.html">Leaderboard</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="credits.html">Credits</a></li>
+        </ul>
+    </header>
+    
+    <div class="comments-sidebar">
+    <div class="comment-input-section">
+        <label for="username">Name:</label>
+        <input type="text" id="comment-user" placeholder="Your name...">
+        <textarea id="comment-text" placeholder="Leave a comment ☆"></textarea>
+        <button onclick="postNewComment()" id="submit-btn">Post</button>
+    </div>
+
+    <div id="comments-display" class="comments-list">
+        </div>
+    </div>
+
+<div id="main">
+        <div class="content">
+            
+            <section class="fact-section history-box">
+                <input type="checkbox" id="history-toggle" class="toggle-input" hidden>
+                <label for="history-toggle" class="fact-header">
+                    <span class="star">★★★</span>
+                    <h2>History</h2>
+                    <span class="star">★★★</span>
+                </label>
+                <div class="collapsible-content">
+                    <div class="inner-padding">
+                        <p>It was created as a survival food for the poor. At the time, Naples was one of the most crowded cities in Europe, packed with a massive underclass of workers called the lazzaroni. They needed something: <br> 
+                    1. Cheap: They had almost no money. <br>
+                        2. Fast & Portable: They worked outdoors and needed a meal they could eat quickly on the street. <br>
+                        3. Calorie-Dense: Flatbread topped with lard or oil provided the energy they needed for manual labor.<br>
+                        <br>
+                        While people had eaten flatbreads for centuries, modern pizza officially began when Neapolitans started adding tomatoes.<br> 
+                        1. The Fear: Europeans originally thought tomatoes were poisonous.<br>
+                        2. The Solution: Because no one else would eat them, tomatoes were extremely cheap. The starving poor in Naples eventually ignored the "poison" rumors and began layering them on their bread.<br>
+                        3. The First Shops: Street vendors began selling these "pizzas" in the 1700s, with the first dedicated pizzeria, Antica Pizzeria Port’Alba, opening in 1738.</p>
+                         <figure class="history-figure">
+                        <img alt="pizza history" src="https://media.lacucinaitaliana.com/photos/5d5c01725cca710009d59b2b/master/h_900,c_limit/GettyImages-466291361.jpg"/>
+                        <figcaption>The Incredible History of Pizza - La Cucina Italiana</figcaption>
+                    </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fact-section trivia-box">
+                <input type="checkbox" id="trivia-toggle" class="toggle-input" hidden>
+                <label for="trivia-toggle" class="fact-header">
+                    <span class="star">★★★</span>
+                    <h2>Trivia</h2>
+                    <span class="star">★★★</span>
+                </label>
+                <div class="collapsible-content">
+                    <div class="inner-padding">
+                        <p>Despite their pungent flavor, olives are botanically fruits because they grow on trees and contain a hard central pit. Similar to cherries or mangos, they consist of skin, flesh, and a seed, yet they cannot be eaten raw; they require curing, brining, or milling into oil to become palatable. These fruits are typically harvested as green in the early fall or as ripe black olives later in the season.<br>
+                            <br>
+                            At least 59% of the world population hates olives on pizzas.
+                            </p>
+                        </div>
+                </div>
+            </section>
+
+        </div>
+        <a href="credits.html" class="footer-link">
+            <footer><p>Copyright © Bascon, Margarito</p></footer>
+        </a>
+    </body> 
+   
+</div>
+<script>
+let comments = JSON.parse(localStorage.getItem('pizzaComments')) || [];
+renderComments();
+
+function postNewComment() {
+    const nameInput = document.getElementById('comment-user');
+    const textInput = document.getElementById('comment-text');
+
+    if (nameInput.value === "" || textInput.value === "") return;
+
+    const newComment = {
+        id: Date.now(),
+        user: nameInput.value,
+        text: textInput.value
+    };
+
+    comments.push(newComment);
+    saveAndRender();
+    nameInput.value = "";
+    textInput.value = "";
+}
+
+function deleteComment(id) {
+    comments = comments.filter(c => c.id !== id);
+    saveAndRender();
+}
+
+function updateComment(id) {
+    const newText = prompt("Edit your comment:");
+    if (newText) {
+        const comment = comments.find(c => c.id === id);
+        comment.text = newText;
+        saveAndRender();
+    }
+}
+
+function saveAndRender() {
+    localStorage.setItem('pizzaComments', JSON.stringify(comments));
+    renderComments();
+}
+    
+function renderComments() {
+    const display = document.getElementById('comments-display');
+    if(!display) return;
+    display.innerHTML = "";
+
+    comments.forEach(c => {
+        display.innerHTML += `
+            <div class="comment-card">
+                <span class="comment-handle">@${c.user.toLowerCase().replace(/\s/g, '')}</span>
+                <p class="comment-body">${c.text}</p>
+                <div class="comment-actions">
+                    <button onclick="updateComment(${c.id})">Update</button>
+                    <button onclick="deleteComment(${c.id})">Delete</button>
+                </div>
+            </div>
+        `;
+    });
+}
+</script>
+
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* header title "Pizzas" format */
 .titleBox{
 background-color: rgba(240, 242, 189, 0.85);
@@ -11,8 +12,243 @@ background-color: rgba(240, 242, 189, 0.85);
     line-height: 1;
     display:flex;
     justify-content: center;
+=======
+.every-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
 }
-/* pizza types container, content, collapsible format + algorithm */
+
+.titleBox {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 35vw;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    backdrop-filter: blur(5px);
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+}
+
+.buns h1 {
+    font-family: 'Serif', 'Times New Roman';
+    font-size: 5vw;
+    margin: 0;
+    color: #333;
+}
+
+.the-container {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    justify-content: center;
+    width: 50vw;
+}
+
+.typeBox {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 50vw; 
+    height: 30vw; 
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    display: flex;
+    position: relative;
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.sliding-door {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliding-door.active {
+    display: flex;
+}
+
+.the-desc {
+    width: 55%;
+}
+
+.the-desc h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3vw;
+    color: #2b2611;
+    margin-bottom: 1vw;
+}
+
+.the-desc p {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2vw;
+    line-height: 1.4;
+    color: #333;
+}
+
+.pizza-image-box {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.4vw solid #4a3421;
+    background: #fff;
+}
+
+.pizza-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-btn {
+    background-color: #f0f2bd;
+    border: none;
+    font-size: 2.5vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    z-index: 10; 
+    box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.1);
+    transition: 0.3s;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-btn:hover {
+    background-color: #e2e4a8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+    left: -5vw;
+}
+
+.next {
+    right: -5vw;
+}
+
+/*.every-layout {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.titleBox {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 45vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    backdrop-filter: blur(5px);
+}
+
+.buns h1 {
+    font-family: 'Serif', 'Times New Roman';
+    font-size: 8vw;
+    margin: 0;
+}
+
+.the-container {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.typeBox {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 65vw;
+    height: 35vw;
+    border-radius: 1vw;
+    padding: 3vw;
+    display: flex;
+    position: relative;
+    border: 0.15vw solid rgba(255, 255, 255, 0.4);
+}
+
+.sliding-door (
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+)
+
+.sliding-door.active {
+    display: flex;
+}
+
+.the-desc {
+    width: 55%;
+}
+
+.the-desc h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4vw;
+    color: #2b2611;
+    margin-bottom: 1.5vw;
+}
+
+.the-desc p {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5vw;
+    line-height: 1.4;
+}
+
+.pizza-image-box {
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-btn {
+    background-color: #f0f2bd;
+    border: none;
+    font-size: 3vw;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    transition: 0.3s;
+}
+
+
+
+/*.titleBox{
+    background-color: rgba(240, 242, 189, 0.85);
+    width: 70vw;
+    padding: 3.5vw;
+    border-radius: 7vw;
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.1);
+    border: 0.2vw solid rgba(255, 255, 255, 0.5);
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> 077e495d174d8b6bc4085c4900e9e756c4056841
+}
+.buns h1 {
+    font-family: 'Libre Baskerville';
+    font-size: 3vw;
+    color: #2b2611;
+    line-height: 1;
+  }
 .pep, .cheese, .hawaiian, .vegan{
     background-color: #fbdc88;
     height: 5%;
@@ -88,4 +324,4 @@ transform: rotate(180deg);
     width:100%;
     max-width:1500px;
     height:auto;
-}
+}*/

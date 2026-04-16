@@ -1,0 +1,72 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 5vh;
+}
+
+.fact-section {
+    background-color: rgba(240, 242, 189, 0.75);
+    width: 45vw; 
+    border-radius: 1vw;
+    border: 0.15vw solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.5vw 1.5vw rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.fact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 1vw;
+    cursor: pointer;
+    background-color: rgba(240, 242, 189, 0.75);
+}
+
+.fact-header h2 {
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5vw;
+    color: #4b352a;
+}
+
+.star {
+    font-size: 2vw;
+    color: #CFB365;
+    transition: transform 0.3s ease;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    background-color: transparent;
+}
+
+.toggle-input:checked ~ .collapsible-content {
+    max-height: 1000px;
+    transition: max-height 1s ease-in-out;
+}
+
+.toggle-input:checked ~ .fact-header .star {
+    transform: rotate(180deg);
+    color: #4b352a;
+}
+
+.inner-padding {
+    padding: 1.5vw;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.4vw;
+    color: #2b2611;
+}
+
+.fact-img {
+    width: 80%;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #CFB365;
+}

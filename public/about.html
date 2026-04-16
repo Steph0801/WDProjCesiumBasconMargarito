@@ -13,141 +13,139 @@
 
 <div class="site">
     <header>
-        <div class="logo-container"><span>About</span></div>
+        <div class="logo-container"><span>About Us</span></div>
         <ul class="nav-links">
             <li><a href="home.html">Home</a></li>
             <li><a href="types.html">Types of Pizza</a></li>
             <li><a href="game.html">Game</a></li>
-                <li><a href="board.html">Leaderboard</a></li>
-            <li><a href="comments.html">Comments</a></li>
+            <li><a href="board.html">Leaderboard</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="credits.html">Credits</a></li>
         </ul>
     </header>
 
+    
+    <div class="comments-sidebar">
+    <div class="comment-input-section">
+        <label for="username">Name:</label>
+        <input type="text" id="comment-user" placeholder="Your name...">
+        <textarea id="comment-text" placeholder="Leave a comment ☆"></textarea>
+        <button onclick="postNewComment()" id="submit-btn">Post</button>
+    </div>
+
+    <div id="comments-display" class="comments-list">
+        </div>
+    </div>
+
     <div id="main">
-        <div class="content">
-           
-            <section class="about"> 
-                    <input type="checkbox" id="about-toggle" class="about-toggle-input" hidden>
-                    <label for="about-toggle" class="about-main">
-                        <h1>About us</h1>
-                        <span class="about-dropdown-arrow">⤵︎</span>
-                    </label>
-            
-            <div class="aboutContent collapsible-content">
-                <!-- 'Developers' container + contents -->
-                <div class="name">
-                    <h1>Developers</h1>
-                        <h2>Mandy Cs05</h2>
-                            <div class="nameContent">
-                                <p>Name: Mandalay G. Bascon<br>
+    <div class="content">
+        
+        <div class="title-box">
+            <h1>About Us</h1>
+        </div>
+
+        <section class="about-card">
+            <div class="yes">
+                <h1>Mandy Cs05</h1>
+                <div class="yes-img">
+                    <img src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/1d275d63aab70fc72290930778fa19371d821401/assets/70f17979c26877777831041b4be2d3f9_0.jpg" alt="Mandih">
+                    <div class="yes-info">
+                        <p>Name: Mandalay G. Bascon<br>
                                     Birthday: May 23, 2011<br>
                                     Where: Floptropica, Ph<br>
                                     Fav Pizza: I hate Pizzas<br>
                                     Fun fact: I like eating ig thats Fun<br>
                                     "Imagine being allergic to seafood" -Ibn Sina
                                 </p>
-                                <img alt="mandih" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/1d275d63aab70fc72290930778fa19371d821401/assets/70f17979c26877777831041b4be2d3f9_0.jpg"/>
-                            </div>
-                        
-                        <h2>Steph Cs20</h2>
-                            <div class="nameContent">
-                                <p>Name: Stephanie Marie F. Margarito<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yes">
+                <h1>Steph Cs20</h1>
+                <div class="yes-img">
+                    <img src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/main/assets/584428796_1213575557254712_269272897133341667_n.jpg" alt="stephen curry">
+                    <div class="yes-info">
+                        <p>Name: Stephanie Marie F. Margarito<br>
                                     Birthday: August 8, 2011<br>
                                     Where: Bahay, Ph street, Earth, Milky Way<br>
                                     Fav Pizza: Angel's Spinach Pizza yum🫶👅<br>
                                     Fun fact: Lowk wanna watch a live surgery😔🤞<br>
                                     "Sometimes you just have to let's go" - those know who
                                 </p>
-                                <img alt="stephen curry" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/main/assets/584428796_1213575557254712_269272897133341667_n.jpg"/>
-                            </div>
-                </div>
-            </div>
-            </section>
-
-                <!-- 'History' container + contents -->
-            <section class="history">
-                <input type="checkbox" id="history-toggle" class="history-toggle-input" hidden>
-                <label for="history-toggle" class="history-main">
-                <h2>History</h2>
-                <span class="dropdown-arrow">⤵︎</span>
-                </label>
-                <div class="historyContent collapsible-content">
-                    <p>It was created as a survival food for the poor. At the time, Naples was one of the most crowded cities in Europe, packed with a massive underclass of workers called the lazzaroni. They needed something: <br> 
-                    1. Cheap: They had almost no money. <br>
-                        2. Fast & Portable: They worked outdoors and needed a meal they could eat quickly on the street. <br>
-                        3. Calorie-Dense: Flatbread topped with lard or oil provided the energy they needed for manual labor.<br>
-                        <br>
-                        While people had eaten flatbreads for centuries, modern pizza officially began when Neapolitans started adding tomatoes.<br> 
-                        1. The Fear: Europeans originally thought tomatoes were poisonous.<br>
-                        2. The Solution: Because no one else would eat them, tomatoes were extremely cheap. The starving poor in Naples eventually ignored the "poison" rumors and began layering them on their bread.<br>
-                        3. The First Shops: Street vendors began selling these "pizzas" in the 1700s, with the first dedicated pizzeria, Antica Pizzeria Port’Alba, opening in 1738 </p>
-                    <figure class="history-figure">
-                        <img alt="pizza history" src="https://media.lacucinaitaliana.com/photos/5d5c01725cca710009d59b2b/master/h_900,c_limit/GettyImages-466291361.jpg"/>
-                        <figcaption>The Incredible History of Pizza - La Cucina Italiana</figcaption>
-                    </figure>
-                </div>
-            </section>
-
-        <!-- 'Trivia' container + content -->
-            <section class="trivia">
-                <input type="checkbox" id="trivia-toggle" class="trivia-toggle-input" hidden>
-                <label for="trivia-toggle" class="trivia-main">
-                <h2>Trivia</h2>
-                <span class="dropdown-arrow">⤵︎</span>
-                </label>
-                <div class="triviaContent collapsible-content">
-                    <div class="triviaCText">
-                        <p>Despite their pungent flavor, olives are botanically fruits because they grow on trees and contain a hard central pit. Similar to cherries or mangos, they consist of skin, flesh, and a seed, yet they cannot be eaten raw; they require curing, brining, or milling into oil to become palatable. These fruits are typically harvested as green in the early fall or as ripe black olives later in the season.<br>
-                            <br>
-                            At least 59% of the world population hates olives on pizzas.
-                            </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        <!-- sources -->
-            <section class="whatBox" id="credits">
-                <input type="checkbox" id="credits-toggle" class="credits-toggle-input" hidden>
-                <label for="credits-toggle" class="whatBox-mama">
-                    <h1>Credits</h1>
-                    <span class="credits-dropdown-arrow">⤵︎</span>
-                    </label>
-                <div class="creditsContent collapsible-content">
-                    <p>links:</p>
-                <a href="https://firebase.google.com/codelabs/build-leaderboards-with-firestore#7">Build leaderboards with Firestore  |  Firebase Codelabs. (n.d.). Firebase. https://firebase.google.com/codelabs/build-leaderboards-with-firestore#7</a><br>
-                <a href="https://medium.com/@youcefbendjenna/the-incredible-history-of-pizza-a6ebf2ff75a8">Dura, G. (1825). The pizza seller [Lithograph]. DeAgostini/Getty Images. https://medium.com/@youcefbendjenna/the-incredible-history-of-pizza-a6ebf2ff75a8</a><br>
-                <a href="https://www.youtube.com/watch?v=x7WJEmxNlEs">Florin Pop. (2020, January 21). Simple Countdown Timer with JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=x7WJEmxNlEs</a><br>
-                <a href="https://bootstrapped.app/guide/how-to-use-firebase-firestore-to-implement-a-real-time-leaderboard">How to use Firebase Firestore to implement a real-time leaderboard? | Bootstrapped Firebase Guides. (n.d.). https://bootstrapped.app/guide/how-to-use-firebase-firestore-to-implement-a-real-time-leaderboard</a><br>
-                <a href="https://medium.com/@tajammalmaqbool11/creating-a-leaderboard-for-your-website-game-using-firebase-and-javascript-7083882b409e">Maqbool, T. (2024, February 22). Creating a leaderboard for your website game using Firebase and JavaScript. Medium. https://medium.com/@tajammalmaqbool11/creating-a-leaderboard-for-your-website-game-using-firebase-and-javascript-7083882b409e</a><br>
-                <a href="https://www.youtube.com/watch?v=LlASuUK0jw0">The Assembly. (2020, May 9). Build a simple web game with HTML5 and Firebase [Video]. YouTube. https://www.youtube.com/watch?v=LlASuUK0jw0</a><br>
-                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_mouse_offsetx">W3Schools online HTML editor. (n.d.). https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_mouse_offsetx</a><br>
-                <a href="https://www.w3schools.com/howto/howto_js_draggable.asp">W3Schools.com. (n.d.-a). https://www.w3schools.com/howto/howto_js_draggable.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/met_element_addeventlistener.asp">W3Schools.com. (n.d.-b). https://www.w3schools.com/jsref/met_element_addeventlistener.asp</a><br>
-                <a href="https://www.w3schools.com/Jsref/prop_element_offsettop.asp#gsc.tab=0">W3Schools.com. (n.d.-c). https://www.w3schools.com/Jsref/prop_element_offsettop.asp#gsc.tab=0</a><br>
-                <a href="https://www.w3schools.com/jsref/event_pagex.asp">W3Schools.com. (n.d.-d). https://www.w3schools.com/jsref/event_pagex.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/event_pagey.asp">W3Schools.com. (n.d.-e). https://www.w3schools.com/jsref/event_pagey.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/event_offsetx.asp">W3Schools.com. (n.d.-f). https://www.w3schools.com/jsref/event_offsetx.asp</a><br>
-                <a href="https://www.w3schools.com/Jsref/prop_element_offsetleft.asp">W3Schools.com. (n.d.-g). https://www.w3schools.com/Jsref/prop_element_offsetleft.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/event_offsety.asp">W3Schools.com. (n.d.-h). https://www.w3schools.com/jsref/event_offsety.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/event_onmousedown.asp">W3Schools.com. (n.d.-i). https://www.w3schools.com/jsref/event_onmousedown.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/event_onmousemove.asp">W3Schools.com. (n.d.-j). https://www.w3schools.com/jsref/event_onmousemove.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/event_onmouseup.asp">W3Schools.com. (n.d.-k). https://www.w3schools.com/jsref/event_onmouseup.asp</a><br>
-                <a href="https://www.w3schools.com/jS/js_sets.asp">W3Schools.com. (n.d.-l). https://www.w3schools.com/jS/js_sets.asp</a><br>
-                <a href="https://www.w3schools.com/jsref/jsref_includes_array.asp">W3Schools.com. (n.d.-m). https://www.w3schools.com/jsref/jsref_includes_array.asp</a><br>
-                <a href="https://www.w3schools.com/tags/att_disabled.asp">W3Schools.com. (n.d.-n). https://www.w3schools.com/tags/att_disabled.asp</a><br>
-                <a href="https://www.w3schools.com/tags/tag_figcaption.asp">W3Schools.com. (n.d.-o). W3Schools Online Web Tutorials. https://www.w3schools.com/tags/tag_figcaption.asp</a>
-
-                <p style=" margin-top: 5vw; text-align: center">Logo and sprites were created by Mandy Bascon and Steph Margarito</p>
-                </div>
-            </section>
-        </div>
-        <a href="about.html" class="footer-link">
+    </div>
+</div>
+        <a href="credits.html" class="footer-link">
             <footer><p>Copyright © Bascon, Margarito</p></footer>
         </a>
     </body> 
    
 </div>
+<script>
+let comments = JSON.parse(localStorage.getItem('pizzaComments')) || [];
+renderComments();
 
+function postNewComment() {
+    const nameInput = document.getElementById('comment-user');
+    const textInput = document.getElementById('comment-text');
+
+    if (nameInput.value === "" || textInput.value === "") return;
+
+    const newComment = {
+        id: Date.now(),
+        user: nameInput.value,
+        text: textInput.value
+    };
+
+    comments.push(newComment);
+    saveAndRender();
+    nameInput.value = "";
+    textInput.value = "";
+}
+
+function deleteComment(id) {
+    comments = comments.filter(c => c.id !== id);
+    saveAndRender();
+}
+
+function updateComment(id) {
+    const newText = prompt("Edit your comment:");
+    if (newText) {
+        const comment = comments.find(c => c.id === id);
+        comment.text = newText;
+        saveAndRender();
+    }
+}
+
+function saveAndRender() {
+    localStorage.setItem('pizzaComments', JSON.stringify(comments));
+    renderComments();
+}
+    
+function renderComments() {
+    const display = document.getElementById('comments-display');
+    if(!display) return;
+    display.innerHTML = "";
+
+    comments.forEach(c => {
+        display.innerHTML += `
+            <div class="comment-card">
+                <span class="comment-handle">@${c.user.toLowerCase().replace(/\s/g, '')}</span>
+                <p class="comment-body">${c.text}</p>
+                <div class="comment-actions">
+                    <button onclick="updateComment(${c.id})">Update</button>
+                    <button onclick="deleteComment(${c.id})">Delete</button>
+                </div>
+            </div>
+        `;
+    });
+}
+</script>
 </body>
 
 </html>

@@ -19,10 +19,24 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="types.html">Types of Pizza</a></li>
                 <li><a href="game.html">Game</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="comments.html">Comments</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="credits.html">Credits</a></li>
             </ul>
         </header>
+
+        
+    <div class="comments-sidebar">
+    <div class="comment-input-section">
+        <label for="username">Name:</label>
+        <input type="text" id="comment-user" placeholder="Your name...">
+        <textarea id="comment-text" placeholder="Leave a comment ☆"></textarea>
+        <button onclick="postNewComment()" id="submit-btn">Post</button>
+    </div>
+
+    <div id="comments-display" class="comments-list">
+        </div>
+    </div>
 
         <div id="main">
             <div class="content">
@@ -35,7 +49,7 @@
                     </div>
                 </section>
             </div>
-            <a href="about.html" class="footer-link">
+            <a href="credits.html" class="footer-link">
                 <footer><p>Copyright © Bascon, Margarito</p></footer>
             </a>
         </div>
@@ -77,6 +91,67 @@
 
         
     </div>
+
+    <script>
+let comments = JSON.parse(localStorage.getItem('pizzaComments')) || [];
+renderComments();
+
+function postNewComment() {
+    const nameInput = document.getElementById('comment-user');
+    const textInput = document.getElementById('comment-text');
+
+    if (nameInput.value === "" || textInput.value === "") return;
+
+    const newComment = {
+        id: Date.now(),
+        user: nameInput.value,
+        text: textInput.value
+    };
+
+    comments.push(newComment);
+    saveAndRender();
+    nameInput.value = "";
+    textInput.value = "";
+}
+
+function deleteComment(id) {
+    comments = comments.filter(c => c.id !== id);
+    saveAndRender();
+}
+
+function updateComment(id) {
+    const newText = prompt("Edit your comment:");
+    if (newText) {
+        const comment = comments.find(c => c.id === id);
+        comment.text = newText;
+        saveAndRender();
+    }
+}
+
+function saveAndRender() {
+    localStorage.setItem('pizzaComments', JSON.stringify(comments));
+    renderComments();
+}
+    
+function renderComments() {
+    const display = document.getElementById('comments-display');
+    if(!display) return;
+    display.innerHTML = "";
+
+    comments.forEach(c => {
+        display.innerHTML += `
+            <div class="comment-card">
+                <span class="comment-handle">@${c.user.toLowerCase().replace(/\s/g, '')}</span>
+                <p class="comment-body">${c.text}</p>
+                <div class="comment-actions">
+                    <button onclick="updateComment(${c.id})">Update</button>
+                    <button onclick="deleteComment(${c.id})">Delete</button>
+                </div>
+            </div>
+        `;
+    });
+}
+</script>
 </body>
 
 </html>

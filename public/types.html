@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styleTypes.css">
 </head>
 
+<!-- NOTE: DONt FORGET To ADD THE WHEN U HOVR THE IMAGE, THERES THE INGEREDIENTS.. ALSO THE WINDOW ALERT TO HOVER TO SEE INGREDIENTS-->
+
 <body>
     <header>
         <div class="logo-container"><span>Types of Pizza</span></div>
@@ -16,99 +18,152 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="game.html">Game</a></li>
             <li><a href="board.html">Leaderboard</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="comments.html">Comments</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="credits.html">Credits</a></li>=
         </ul>
     </header>
 
-    <section class="titleBox">
-        <h1>Pizzas</h1>
-    </section>
-    
-    <!-- pizza types container -->
-    <section class="typeBox">
-        <section class="pep">
-            <input type="checkbox" id="pep-toggle" class="pizza-toggle-input" hidden>
-            <label  for="pep-toggle" class="pizza-bruh">
-            <h2>Pepperoni Pizza</h2>
-            <span class="dropdown-mama">⤵︎</span>
-            </label>
-            <div class="pepContent">
-                <p>Pepperoni pizza is a classic American variety featuring tangy tomato sauce, melted mozzarella, and slices of pepperoni, a spicy cured pork and beef salami, making it one of the world's most popular pizzas.</p>
-                <img alt="pepperoni pizza" src="../assets/pepperoniP.png">
-            </div>
-            <div class="collapsible-content">
-                <div class="dropdownContent">
-                    <img alt="Pepperoni Ingr" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/4f2261cd2589a9ebe7c7087d57bd735bdc4e9ab9/assets/PeperoniPizza%20Ingredients.png">
-                </div>
-            </div>
-        </section>
+    <div class="comments-sidebar">
+    <div class="comment-input-section">
+        <label for="username">Name:</label>
+        <input type="text" id="comment-user" placeholder="Your name...">
+        <textarea id="comment-text" placeholder="Leave a comment ☆"></textarea>
+        <button onclick="postNewComment()" id="submit-btn">Post</button>
+    </div>
 
-        <section class="cheese">
-            <input type="checkbox" id="cheese-toggle" class="pizza-toggle-input" hidden>
-            <label  for="cheese-toggle" class="pizza-bruh">
-            <h2>Cheese Pizza</h2>
-            <span class="dropdown-mama">⤵︎</span>
-            </label>
-            <div class="chContent">
-                <p>Cheese pizza is a popular, classic dish consisting of a crust topped with tomato sauce and a blend of cheeses, most commonly mozzarella, valued for its melt and stretch. The blend often incorporates sharper cheeses like Provolone or Parmesan, or creamy additions like Ricotta, for added flavor depth.</p>
-                <img alt="cheese pizza" src="../assets/cheeseP.png">
-            </div>
-             <div class="collapsible-content">
-                <div class="dropdownContent">
-                    <img alt="Cheese Ingr" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/4f2261cd2589a9ebe7c7087d57bd735bdc4e9ab9/assets/CheesePizza%20Ingredients%20.png">
-                </div>
-            </div>
-        </section>
-
-        <section class="hawaiian">
-            <input type="checkbox" id="hawaiian-toggle" class="pizza-toggle-input" hidden>
-            <label  for="hawaiian-toggle" class="pizza-bruh">
-            <h2>Hawaiian Pizza</h2>
-            <span class="dropdown-mama">⤵︎</span>
-            </label>
-            <div class="hwContent">
-                <p>Hawaiian pizza, invented in Canada, is a debated variety featuring tomato sauce, mozzarella, ham/Canadian bacon, and pineapple chunks, whose unique sweet and savory flavor sparks controversy among purists who argue the fruit disrespects Italian culinary heritage.</p>
-                <img alt="hawaiian pizza" src="../assets/hawaiian.png">
-            </div>
-             <div class="collapsible-content">
-                <div class="dropdownContent">
-                    <img alt="Hawaiian Ingr" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/4f2261cd2589a9ebe7c7087d57bd735bdc4e9ab9/assets/HawaiianPizza%20Ingredients.png">
-                </div>
-            </div>
-        </section>
-
-        <section class="vegan">
-            <input type="checkbox" id="vegan-toggle" class="pizza-toggle-input" hidden>
-            <label  for="vegan-toggle" class="pizza-bruh">
-            <h2>Vegan Pizza</h2>
-            <span class="dropdown-mama">⤵︎</span>
-            </label>
-            <div class="vgContent">
-                <p>A vegan pizza is a plant-based pizza made without any animal products, substituting dairy cheese and meat with vegetables, fruits, plant-based meats, and dairy-free cheeses.</p>
-                <img alt="vegan pizza" src="../assets/vegan.png">
-            </div>
-            <div class="collapsible-content">
-                <div class="dropdownContent">
-                    <img id="vgIngrdnt" alt="Vegan Ingr" src="https://raw.githubusercontent.com/Steph0801/WDProjCesiumBasconMargarito/4f2261cd2589a9ebe7c7087d57bd735bdc4e9ab9/assets/VeganPizza%20Ingredients.png">
-                </div>
-            </div>
-        </section>
-    </section>
+    <div id="comments-display" class="comments-list">
         </div>
+    </div>
 
-        <a href="about.html" class="footer-link">
-            <footer><p>Copyright © Bascon, Margarito</p></footer>
-        </a>
-    
-    </body> 
+    <div class="every-layout">
+        <section class="titleBox">
+            <div class="buns"><h1>Pizzas</h1></div>
+        </section>
+
+        <div class="the-container">
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;&#10094;</button>
+
+            <section class="typeBox">
+                <section class="sliding-door active">
+                    <div class="the-desc">
+                        <h2>Pepperoni Pizza</h2>
+                        <p>Pepperoni pizza is a classic American variety featuring tangy tomato sauce, melted mozzarella, and slices of pepperoni, a spicy cured pork and beef salami, making it one of the world's most popular pizzas.</p>
+                    </div>
+                    <div class="pizza-image-box">
+                        <img src="../assets/pepperoniP.png" alt="pepperoni pizza">
+                    </div>
+                </section>
+
+                <section class="sliding-door">
+                    <div class="the-desc">
+                        <h2>Cheese Pizza</h2>
+                        <p>Cheese pizza is a popular, classic dish consisting of a crust topped with tomato sauce and a blend of cheeses, most commonly mozzarella, valued for its melt and stretch. The blend often incorporates sharper cheeses like Provolone or Parmesan, or creamy additions like Ricotta, for added flavor depth.</p>
+                    </div>
+                    <div class="pizza-image-box">
+                        <img src="../assets/cheeseP.png" alt="cheese pizza">
+                    </div>
+                </section>
+
+                <section class="sliding-door">
+                    <div class="the-desc">
+                        <h2>Hawaiian Pizza</h2>
+                        <p>Hawaiian pizza, invented in Canada, is a debated variety featuring tomato sauce, mozzarella, ham/Canadian bacon, and pineapple chunks, whose unique sweet and savory flavor sparks controversy among purists who argue the fruit disrespects Italian culinary heritage.</p>
+                    </div>
+                    <div class="pizza-image-box">
+                        <img src="../assets/hawaiian.png" alt="hawaiian pizza">
+                    </div>
+                </section>
+
+                <section class="sliding-door">
+                    <div class="the-desc">
+                        <h2>Vegan Pizza</h2>
+                        <p>A vegan pizza is a plant-based pizza made without any animal products, substituting dairy cheese and meat with vegetables, fruits, plant-based meats, and dairy-free cheeses.</p>
+                    </div>
+                    <div class="pizza-image-box">
+                        <img src="../assets/vegan.png" alt="vegan pizza">
+                    </div>
+                </section>
+            </section>
+
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;&#10095;</button>
+        </div>
+    </div>
+
+    <a href="credits.html" class="footer-link">
+        <footer><p>Copyright © Bascon, Margarito</p></footer>
+    </a>
+
     <script>
-        window.onload = function() {
-            alert("ℭ𝔩𝔦𝔠𝔨 𝔱𝔥𝔢 𝔞𝔯𝔯𝔬𝔴𝔰 𝔱𝔬 𝔰𝔢𝔢 𝔱𝔥𝔢 𝔦𝔫𝔤𝔯𝔢𝔡𝔦𝔢𝔫𝔱𝔰 ✿✿")
-        };
-        
-    </script>
-</div>
-</body>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("sliding-door");
 
+        function moveSlide(n) {
+            slides[slideIndex].classList.remove("active");
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            slides[slideIndex].classList.add("active");
+        }
+    </script>
+<script>
+let comments = JSON.parse(localStorage.getItem('pizzaComments')) || [];
+renderComments();
+
+function postNewComment() {
+    const nameInput = document.getElementById('comment-user');
+    const textInput = document.getElementById('comment-text');
+
+    if (nameInput.value === "" || textInput.value === "") return;
+
+    const newComment = {
+        id: Date.now(),
+        user: nameInput.value,
+        text: textInput.value
+    };
+
+    comments.push(newComment);
+    saveAndRender();
+    nameInput.value = "";
+    textInput.value = "";
+}
+
+function deleteComment(id) {
+    comments = comments.filter(c => c.id !== id);
+    saveAndRender();
+}
+
+function updateComment(id) {
+    const newText = prompt("Edit your comment:");
+    if (newText) {
+        const comment = comments.find(c => c.id === id);
+        comment.text = newText;
+        saveAndRender();
+    }
+}
+
+function saveAndRender() {
+    localStorage.setItem('pizzaComments', JSON.stringify(comments));
+    renderComments();
+}
+    
+function renderComments() {
+    const display = document.getElementById('comments-display');
+    if(!display) return;
+    display.innerHTML = "";
+
+    comments.forEach(c => {
+        display.innerHTML += `
+            <div class="comment-card">
+                <span class="comment-handle">@${c.user.toLowerCase().replace(/\s/g, '')}</span>
+                <p class="comment-body">${c.text}</p>
+                <div class="comment-actions">
+                    <button onclick="updateComment(${c.id})">Update</button>
+                    <button onclick="deleteComment(${c.id})">Delete</button>
+                </div>
+            </div>
+        `;
+    });
+}
+</script>
+
+</body>
 </html>
