@@ -25,6 +25,21 @@
         </ul>
     </header>
 
+    <div class="comments-sidebar">
+    <div class="comment-input-section">
+        <label for="username">Name:________________</label>
+        <input type="text" id="comment-user" placeholder="Your name...">
+        <div class="comment-prompt">
+            <span>Leave a comment ☆</span>
+        </div>
+        <textarea id="comment-text" placeholder="Type your comment..."></textarea>
+        <button onclick="createComment()" id="submit-btn">Post</button>
+    </div>
+
+    <div id="comments-display" class="comments-list">
+        </div>
+    </div>
+
     <div class="every-layout">
         <section class="titleBox">
             <div class="buns"><h1>Pizzas</h1></div>
@@ -93,5 +108,59 @@
             slides[slideIndex].classList.add("active");
         }
     </script>
+    <script>
+    let comments = [];
+    function createComment() {
+    const nameInput = document.getElementById('comment-user');
+    const textInput = document.getElementById('comment-text');
+
+    if (nameInput.value === "" || textInput.value === "") return;
+
+    const newComment = {
+        id: Date.now(),
+        user: nameInput.value,
+        text: textInput.value
+    };
+
+    comments.push(newComment);
+    renderComments();
+    
+    nameInput.value = "";
+    textInput.value = "";
+}
+
+function deleteComment(id) {
+    comments = comments.filter(c => c.id !== id);
+    renderComments();
+}
+
+function updateComment(id) {
+    const newText = prompt("Edit your comment:");
+    if (newText) {
+        const comment = comments.find(c => c.id === id);
+        comment.text = newText;
+        renderComments();
+    }
+}
+
+function renderComments() {
+    const display = document.getElementById('comments-display');
+    display.innerHTML = "";
+
+    comments.forEach(c => {
+        display.innerHTML += `
+            <div class="comment-card">
+                <span class="comment-handle">@${c.user.toLowerCase().replace(/\s/g, '')}</span>
+                <span class="comment-body">${c.text}</span>
+                <div class="comment-actions">
+                    <button onclick="updateComment(${c.id})">Update</button>
+                    <button onclick="deleteComment(${c.id})">Delete</button>
+                </div>
+            </div>
+        `;
+    });
+}
+</script>
+
 </body>
 </html>
