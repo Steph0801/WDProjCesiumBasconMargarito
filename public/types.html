@@ -30,7 +30,7 @@
         <label for="username">Name:________________</label>
         <input type="text" id="comment-user" placeholder="Your name...">
         <textarea id="comment-text" placeholder="Leave a comment ☆"></textarea>
-        <button onclick="createComment()" id="submit-btn">Post</button>
+        <button onclick="postNewComment()" id="submit-btn">Post</button>
     </div>
 
     <div id="comments-display" class="comments-list">
@@ -109,7 +109,7 @@
 let comments = JSON.parse(localStorage.getItem('pizzaComments')) || [];
 renderComments();
 
-function createComment() {
+function postNewComment() {
     const nameInput = document.getElementById('comment-user');
     const textInput = document.getElementById('comment-text');
 
