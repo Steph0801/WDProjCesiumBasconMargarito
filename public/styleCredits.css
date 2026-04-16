@@ -1,0 +1,49 @@
+.credits-card {
+    background-color: rgba(240, 242, 189, 0.8);
+    width: 55vw;
+    margin: 2vw auto;
+    padding: 2vw 4vw;
+    border-radius: 2vw;
+    border: 0.1vw solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.credits-header {
+    text-align: center;
+    border-bottom: 2px solid  rgba(0,0,0,0.05);
+    margin-bottom: 1.5vw;
+}
+
+.credits-header h1 {
+    font-family: 'Sitka', serif;
+    font-size: 3vw;
+    color: #2b2611;
+    margin: 0.5vw 0;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+
+.links-container a {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.1vw;
+    color: #2b2611;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.links-container a:hover {
+    color:  rgba(240, 242, 189); 
+}
+
+.credits-extra {
+    margin-top: 5vw;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    font-size: 1.1vw;
+    color: #2b2611;
+}
